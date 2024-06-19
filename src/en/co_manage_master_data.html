@@ -1,0 +1,330 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><meta name="prodname" content="MARqeT"><meta name="version" content="1.0"><meta name="version" content="2.0"><meta name="version" content="3.0"><meta name="release" content="October 2021"><meta name="release" content="October 2023"><meta name="release" content="May 2024"><title>Master data</title><script src="../js/lunr-client.js"></script><script src="../js/lunr.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="../css/common-extended.css"><link rel="stylesheet" type="text/css" href="../css/basf.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous"></head><body><div class="visually-hidden-focusable overflow-hidden p-2 bg-body-tertiary"><div class="container-xl"><a class="d-inline-flex m-1 btn btn-outline-primary btn-sm">Skip to main content</a><a href="#bs-sidebar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Skip to docs navigation</a></div></div><header role="banner" class="sticky-top"><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<div class="container-xxl">
+<!-- This shows the menu on mobile -->
+<div class="bd-navbar-toggle">
+<button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar" aria-controls="bdSidebar" aria-label="Toggle docs navigation">
+<i class="bi bi-list"></i>
+</button>
+</div>
+<a class="navbar-brand" href="index.html"><img src="../_graphics/MarqeT_logo_300.png" alt="MARqeT-logo" class="logo-header"> MARqeT Documentation </a>
+<button class="navbar-toggler p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<i class="bi bi-three-dots"></i>
+</button>
+<!--<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="#">Link One</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Link Two</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Link Three</a>
+</li>
+</ul>-->
+<ul class="navbar-nav ms-auto">
+<li class="nav-item d-flex align-items-center">
+<span class="nav-link pe-2">
+<i class="bi bi-search"></i>
+</span>
+<form class="position-relative me-auto search-box rounded">
+<input type="search" class="form-control" placeholder="Search…" aria-label="Search for…" dir="auto">
+</form>
+</li>
+</ul>
+<ul class="navbar-nav ms-auto">
+<!--
+          This is a dark/light color theme toggler.
+          It requires JavaScript to function.
+        -->
+<li class="nav-item dropdown">
+<a href="#" class="nav-link px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-color-mode" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+<span class="d-light">
+<i class="bi bi-brightness-high-fill"></i>
+</span>
+<span class="d-dark">
+<i class="bi bi-moon-stars-fill"></i>
+</span>
+<span class="d-auto">
+<i class="bi bi-circle-half"></i>
+</span>
+<span class="d-lg-none ms-2">Toggle Color Mode</span>
+</a>
+<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-color-mode" style="--bs-dropdown-min-width: 6rem;" data-bs-popper="static">
+<li>
+<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
+<i class="bi bi-brightness-high-fill"></i>
+<span class="ms-2">Light</span>
+</button>
+</li>
+<li>
+<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
+<i class="bi bi-moon-stars-fill"></i>
+<span class="ms-2">Dark</span>
+</button>
+</li>
+<li>
+<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto">
+<i class="bi bi-circle-half"></i>
+<span class="ms-2">Auto</span>
+</button>
+</li>
+</ul>
+</li>
+</ul>
+<!--</div>-->
+</div>
+<img src="../_graphics/basf-logo-white.svg" alt="BASF-logo" class="BASF-logo-header">
+</nav></header><div class="bs-container container-xxl bd-gutter mt-3 my-md-4" id="content"><div class="overflow-y-auto bs-sidebar"><div class="offcanvas-lg offcanvas-start" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel" aria-modal="true" role="dialog"><div class="offcanvas-header border-bottom"><h5 class="offcanvas-title" id="bdSidebarOffcanvasLabel">MARqeT documentation</h5><button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdSidebar"></button></div><div class="offcanvas-body flex-column h-100"><nav class="d-flex flex-align-start flex-column h-100 overflow-y-auto" role="navigation" id="bs-sidebar-nav"><div class="overflow-y-auto"><div class="flex-column bd-links"><ul class="list-unstyled mb-0 py-3 pt-md-1"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/index.html">Dashboard</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d12621e180"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d12621e180" aria-labelledby="menu-collapse-trigger-d12621e180" aria-controls="menu-collapse-d12621e180"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/to_introduction.html">What is MARqeT</a></div><div id="menu-collapse-d12621e180" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_purpose_and_goals.html">Why we need MARqeT</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_overview_process.html">The MARqeT process</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_user_roles.html">User roles</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/re_user_role_permissions.html">User role permissions</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d12621e276"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0 active" data-bs-target="#menu-collapse-d12621e276" aria-expanded="true" aria-current="true" aria-labelledby="menu-collapse-trigger-d12621e276" aria-controls="menu-collapse-d12621e276"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/to_getting_started_0.html">Getting started</a></div><div id="menu-collapse-d12621e276" class="collapse show"><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row" id="menu-collapse-trigger-d12621e297"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d12621e297" aria-labelledby="menu-collapse-trigger-d12621e297" aria-controls="menu-collapse-d12621e297"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/ta_define_settings.html#ta_define_settings">Define user settings</a></div><div id="menu-collapse-d12621e297" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_define_settings.html#co_necessary_data_to_define_settings">Data for defining user settings</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_view_dashboard.html">Dashboard</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_notifications.html">Notifications</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d12621e374"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0 active" data-bs-target="#menu-collapse-d12621e374" aria-expanded="true" aria-current="true" aria-labelledby="menu-collapse-trigger-d12621e374" aria-controls="menu-collapse-d12621e374"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1 active" href="../en/co_manage_master_data.html#ta_manage_master_data">Master data</a></div><div id="menu-collapse-d12621e374" class="collapse show"><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_manage_master_data.html#ta_setup_marker_panels">Set up predefined marker panels</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_manage_master_data.html#ta_set_up_predefined_trait_panels">Set up predefined trait panels</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_manage_master_data.html#ta_setup_trait_marker_dependencies">Set up trait marker dependencies</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_manage_master_data.html#ta_set_up_master_data">Set up service types</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_manage_master_data.html#ta_setup_budget_numbers">Set up budget numbers</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_manage_master_data.html#ta_setup_field_dependencies">Set up field dependencies</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_report_issue.html">Report an issue</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d12621e510"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d12621e510" aria-labelledby="menu-collapse-trigger-d12621e510" aria-controls="menu-collapse-d12621e510"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/to_module_1.html">Request form and preplanning</a></div><div id="menu-collapse-d12621e510" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_requests_list.html">Requests list</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d12621e554"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d12621e554" aria-labelledby="menu-collapse-trigger-d12621e554" aria-controls="menu-collapse-d12621e554"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/ta_creating_request.html#ta_creating_request">Create a request</a></div><div id="menu-collapse-d12621e554" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_creating_request.html#co_data_for_creating_request">Data for creating a request</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_archive_request.html">Cancel a request</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_duplicate_request.html">Duplicate a request</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_upload_requests_in_batch.html">Upload requests in batch</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_comment_on_request.html">Comment on a request</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_preplanning_calendar.html">Preplanning calendar</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d12621e679"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d12621e679" aria-labelledby="menu-collapse-trigger-d12621e679" aria-controls="menu-collapse-d12621e679"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/to_module_3.html">Sample Container Generator</a></div><div id="menu-collapse-d12621e679" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_source_types.html">Source types</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_criteria_for_bag_or_plate_layout.html">Criteria for container layout</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_filling_options.html">Filling options</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d12621e757"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d12621e757" aria-labelledby="menu-collapse-trigger-d12621e757" aria-controls="menu-collapse-d12621e757"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/to_define_the_sample_container_or_seedbag_layout.html#to_define_the_containeror_seedbag_setup">Define the sample container layout</a></div><div id="menu-collapse-d12621e757" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row" id="menu-collapse-trigger-d12621e774"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d12621e774" aria-labelledby="menu-collapse-trigger-d12621e774" aria-controls="menu-collapse-d12621e774"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/to_define_the_sample_container_or_seedbag_layout.html#to_using_prism_entries">Using PRISM as a source</a></div><div id="menu-collapse-d12621e774" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_prism_book">Select a book</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_observation_units_prism">Select the observation units</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_order_prism">Change the observation unit order</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_container_layout_prism">Define the container layout</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_using_qa_nautilus_worklists">Using QA Nautilus worklists</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d12621e876"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d12621e876" aria-labelledby="menu-collapse-trigger-d12621e876" aria-controls="menu-collapse-d12621e876"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/to_define_the_sample_container_or_seedbag_layout.html#using_external_samples">Using external samples</a></div><div id="menu-collapse-d12621e876" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_template_external">Upload a csv template</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_container_layout_external">Define the container layout</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_using_dna_plates">Using DNA plates</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d12621e944"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d12621e944" aria-labelledby="menu-collapse-trigger-d12621e944" aria-controls="menu-collapse-d12621e944"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/to_define_the_sample_container_or_seedbag_layout.html#using_dna_cherry_pick_plates">Using DNA cherry pick plates</a></div><div id="menu-collapse-d12621e944" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_dna_plates_cherry">Select DNA plates</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_observation_units_cherry">Select the observation units</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_order_cherry">Change the observation unit order</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_container_layout_cherry">Define the container layout</a></div></li></ul></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_manage_sample_container_layout_screens.html">Sample container layout screens</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d12621e1046"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d12621e1046" aria-labelledby="menu-collapse-trigger-d12621e1046" aria-controls="menu-collapse-d12621e1046"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/to_module_2.html">Testing Strategy</a></div><div id="menu-collapse-d12621e1046" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_types_of_testing_strategies.html">Testing strategy types</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_additional_information_types.html">Additional information types</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d12621e1107"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d12621e1107" aria-labelledby="menu-collapse-trigger-d12621e1107" aria-controls="menu-collapse-d12621e1107"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/co_create_a_testing_strategy.html">Create a testing strategy</a></div><div id="menu-collapse-d12621e1107" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_as_a_customer.html">As a customer</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d12621e1141"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d12621e1141" aria-labelledby="menu-collapse-trigger-d12621e1141" aria-controls="menu-collapse-d12621e1141"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/ta_as_a_test_strategist.html">As a test strategist</a></div><div id="menu-collapse-d12621e1141" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_using_a_trait_panel.html">Using a trait panel</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_using_a_predefined_panel_test_strategist.html">Using a predefined panel</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/custom_marker_instances.html">Using custom marker instances</a></div></li></ul></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_link_containers_to_a_testing_strategy.html">Link containers to a testing strategy</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d12621e1226"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d12621e1226" aria-labelledby="menu-collapse-trigger-d12621e1226" aria-controls="menu-collapse-d12621e1226"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/to_module_4.html">Track and Trace</a></div><div id="menu-collapse-d12621e1226" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_create_a_shipment.html">Create and submit a shipment</a></div></li></ul></div></li></ul></div></div></nav></div></div></div><main role="main" class="bs-main me-3"><article role="article" class="bs-content" aria-labelledby="ariaid-title1"><article class="nested0" aria-labelledby="ariaid-title1" id="ta_manage_master_data">
+<h1 class="title" id="ariaid-title1">Master data</h1>
+<div class="body conbody">
+<section class="section" id="ta_manage_master_data__section_mwt_4rr_xqb"><h2 class="title h4">Master data usage</h2>
+
+<p class="p">Master data is a collection of predefined options to create requests and test strategies, including:</p>
+<ul class="ul" id="ta_manage_master_data__ul_wm3_3tr_xqb">
+<li class="li"><a class="xref" href="co_manage_master_data.html#ta_setup_marker_panels">Marker panels</a> and <a class="xref" href="co_manage_master_data.html#ta_setup_trait_marker_dependencies">trait marker dependencies</a> for test strategists</li>
+<li class="li"><a class="xref" href="co_manage_master_data.html#ta_set_up_master_data">Service types</a><span class="ph"> and <a class="xref" href="co_manage_master_data.html#ta_setup_budget_numbers">budget numbers</a></span> for customers</li>
+<li class="li"><a class="xref" href="co_manage_master_data.html#ta_setup_field_dependencies">Field dependencies</a> for customers and test strategists</li>
+</ul>
+</section>
+<section class="section" id="ta_manage_master_data__section_kt5_qrr_xqb"><h2 class="title h4">Manage the master data</h2>
+
+<p class="p">On the master data list screens you can perform the following actions:</p>
+<figure class="fig figure w-100 mw-100 p-3" id="ta_manage_master_data__fig_cxs_gjt_tqb">
+<img class="image figure-img img-fluid border rounded" id="ta_manage_master_data__image_jg2_ymg_wqb" src="../_graphics/admin_screen_cut.png">
+<dl class="dl row">
+
+<dt class="dt col-lg-3 text-truncate dlterm"><span class="ph calloutkey">A</span></dt>
+<dd class="dd col-lg-9">Customize the master data list by checking the boxes <img class="image figure-img img-fluid border rounded icon" id="ta_manage_master_data__image_k2k_chx_5qb" src="../_graphics/green_check.png"> of the fields you want to show.</dd>
+
+
+<dt class="dt col-lg-3 text-truncate dlterm"><span class="ph calloutkey">B</span></dt>
+<dd class="dd col-lg-9">Filter the master data list.</dd>
+
+
+<dt class="dt col-lg-3 text-truncate dlterm"><span class="ph calloutkey">C</span></dt>
+<dd class="dd col-lg-9">Search the master data list by entering a search term.</dd>
+
+
+<dt class="dt col-lg-3 text-truncate dlterm"><span class="ph calloutkey">D</span></dt>
+<dd class="dd col-lg-9">Create a new <a class="xref" href="co_manage_master_data.html#ta_set_up_master_data">service type</a>, <a class="xref" href="co_manage_master_data.html#ta_setup_marker_panels">marker panel</a>, <a class="xref" href="co_manage_master_data.html#ta_setup_trait_marker_dependencies">trait marker dependency</a>, <span class="ph"><a class="xref" href="co_manage_master_data.html#ta_setup_budget_numbers">budget number</a>, </span>or <a class="xref" href="co_manage_master_data.html#ta_setup_field_dependencies">field dependency</a>.</dd>
+
+
+<dt class="dt col-lg-3 text-truncate dlterm"><span class="ph calloutkey">E</span></dt>
+<dd class="dd col-lg-9">Duplicate the checked <img class="image figure-img img-fluid border rounded icon" id="ta_manage_master_data__image_ixn_tng_wqb" src="../_graphics/green_check.png"> entity.</dd>
+
+
+<dt class="dt col-lg-3 text-truncate dlterm"><span class="ph calloutkey">F</span></dt>
+<dd class="dd col-lg-9">Edit the checked <img class="image figure-img img-fluid border rounded icon" id="ta_manage_master_data__image_f3s_xqj_crb" src="../_graphics/green_check.png"> entity.</dd>
+
+
+<dt class="dt col-lg-3 text-truncate dlterm"><span class="ph calloutkey">G</span></dt>
+<dd class="dd col-lg-9">Retire or delete the checked <img class="image figure-img img-fluid border rounded icon" id="ta_manage_master_data__image_z53_yqj_crb" src="../_graphics/green_check.png"> entity.</dd>
+
+</dl>
+</figure>
+
+<div role="alert" class="note alert alert-info" id="ta_manage_master_data__note_ftf_3hy_ssb"><span class="note__title"><i class="pe-2 bi bi-info-circle-fill"></i>Notice:</span> Entities are retired to ensure traceability, otherwise, they are deleted.<div class="border pt-3 ps-3 pe-3"><table class="table table-bordered" id="ta_manage_master_data__table_zbm_yb3_d1c"><colgroup><col style="width:33.33333333333333%"><col style="width:33.33333333333333%"><col style="width:33.33333333333333%"></colgroup><thead class="thead">
+<tr>
+<th class="entry" id="ta_manage_master_data__table_zbm_yb3_d1c__entry__1">Entity</th>
+<th class="entry" id="ta_manage_master_data__table_zbm_yb3_d1c__entry__2">Can it be retired?</th>
+<th class="entry" id="ta_manage_master_data__table_zbm_yb3_d1c__entry__3">Can it be deleted?</th>
+</tr>
+</thead><tbody class="tbody">
+<tr>
+<td class="entry" headers="ta_manage_master_data__table_zbm_yb3_d1c__entry__1">Trait marker dependency</td>
+<td class="entry" headers="ta_manage_master_data__table_zbm_yb3_d1c__entry__2">No</td>
+<td class="entry" headers="ta_manage_master_data__table_zbm_yb3_d1c__entry__3">Yes</td>
+</tr>
+<tr>
+<td class="entry" headers="ta_manage_master_data__table_zbm_yb3_d1c__entry__1">Field dependency</td>
+<td class="entry" headers="ta_manage_master_data__table_zbm_yb3_d1c__entry__2">No</td>
+<td class="entry" headers="ta_manage_master_data__table_zbm_yb3_d1c__entry__3">Yes</td>
+</tr>
+<tr>
+<td class="entry" headers="ta_manage_master_data__table_zbm_yb3_d1c__entry__1">Predefined panel</td>
+<td class="entry" headers="ta_manage_master_data__table_zbm_yb3_d1c__entry__2">Yes, but it cannot be reactivated</td>
+<td class="entry" headers="ta_manage_master_data__table_zbm_yb3_d1c__entry__3">No</td>
+</tr>
+<tr>
+<td class="entry" headers="ta_manage_master_data__table_zbm_yb3_d1c__entry__1">Service type</td>
+<td class="entry" headers="ta_manage_master_data__table_zbm_yb3_d1c__entry__2">Yes, and it can be reactivated</td>
+<td class="entry" headers="ta_manage_master_data__table_zbm_yb3_d1c__entry__3">No, unless it was never used in a request</td>
+</tr>
+</tbody></table></div></div>
+</section>
+</div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="to_getting_started_0.html">Getting started</a></div></div></nav><article class="topic task nested1" aria-labelledby="ariaid-title2" id="ta_setup_marker_panels">
+<h2 class="title page-break-before" id="ariaid-title2">Set up predefined marker panels</h2>
+<div class="body taskbody">
+<section class="section context">Set up specific predefined marker panels for test strategists to select when creating a test strategy. These panels include frequently used marker instance combinations. For more information on predefined marker panels, see <a class="xref" href="co_types_of_testing_strategies.html">Testing strategy types</a>.</section>
+<section id="ta_setup_marker_panels__steps_dcb_1zw_5qb"><ol class="ol steps" id="ta_setup_marker_panels__steps_dcb_1zw_5qb"><li class="li step stepexpand">
+<span class="ph cmd">In the left blue menu, go to the <strong class="ph b">Admin</strong> section and click <span class="ph uicontrol">Predefined panels</span>.</span>
+<div class="itemgroup info">
+<figure class="fig figure w-100 mw-100 p-3" id="ta_setup_marker_panels__fig_avc_yhy_ssb">
+<img class="image figure-img img-fluid border rounded small" id="ta_setup_marker_panels__image_qqc_s5j_xsb" src="../_graphics/marker_panels.png">
+</figure>
+
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">At the right top of the table, click <span class="ph menucascade"><span class="ph uicontrol"><img class="image icon" id="ta_setup_marker_panels__image_umz_tww_5qb" src="../_graphics/kebab_menu.png"></span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Create marker panel</span></span>.</span>
+</li><li class="li step stepexpand">
+<span class="ph cmd">In the <span class="keyword wintitle">Create marker panel</span> window, enter the panel specifics, including a meaningful and unique name to easily identify and retrieve the panel. Click <span class="ph uicontrol">Create</span>.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-info" id="ta_setup_marker_panels__note_ay3_jbm_lzb"><span class="note__title"><i class="pe-2 bi bi-pencil"></i>Note:</span> The marker instance unique identifiers (UIDs) can be found in the marker repository: <a class="xref" href="https://marker-repository-app.rnd.seeds.basf.net/" target="_blank" rel="external noopener">https://marker-repository-app.rnd.seeds.basf.net/</a></div>
+<div role="alert" class="note alert alert-info" id="ta_setup_marker_panels__note_hvk_n1m_lzb"><span class="note__title"><i class="pe-2 bi bi-info-circle-fill"></i>Notice:</span> Next to routinely used panels, you can also include panels in the discovery phase, even if they haven’t been validated or ordered. When the panels do become available, check <span class="ph uicontrol">Available in the lab</span>.</div>
+</div>
+</li></ol></section>
+</div>
+</article><article class="topic task nested1" aria-labelledby="ariaid-title3" lang="en-US" id="ta_set_up_predefined_trait_panels">
+<h2 class="title" id="ariaid-title3">Set up predefined trait panels</h2>
+<div class="body taskbody">
+<section class="section context" id="ta_set_up_predefined_trait_panels__context_zx3_jbm_lzb">Set up predefined trait panels for test strategists to select when creating a test strategy. These panels include frequently used trait combinations. For more information on predefined trait panels, see <a class="xref" href="co_types_of_testing_strategies.html">Testing strategy types</a>.</section>
+<section id="ta_set_up_predefined_trait_panels__steps_dcb_1zw_5qb"><ol class="ol steps" id="ta_set_up_predefined_trait_panels__steps_dcb_1zw_5qb"><li class="li step stepexpand">
+<span class="ph cmd">In the left blue menu, go to the <strong class="ph b">Admin</strong> section and click <span class="ph uicontrol">Predefined panels</span>.</span>
+<div class="itemgroup info">
+<figure class="fig figure w-100 mw-100 p-3" id="ta_set_up_predefined_trait_panels__fig_avc_yhy_ssb">
+<img class="image figure-img img-fluid border rounded small" id="ta_set_up_predefined_trait_panels__image_qqc_s5j_xsb" src="../_graphics/marker_panels.png">
+</figure>
+
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">At the right top of the table, click <span class="ph menucascade"><span class="ph uicontrol"><img class="image icon" id="ta_set_up_predefined_trait_panels__image_umz_tww_5qb" src="../_graphics/kebab_menu.png"></span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Create trait panel</span></span>.</span>
+<div class="itemgroup stepresult">The <span class="keyword wintitle">Create trait panel</span> window appears, containing the <a class="xref" href="co_manage_master_data.html#ta_setup_trait_marker_dependencies">trait marker dependencies</a> table. This table helps you translate traits into the most preferred marker instances.</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Enter a meaningful and unique name to easily identify and retrieve the panel.</span>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Check <img class="image icon" id="ta_set_up_predefined_trait_panels__image_msh_q3q_pzb" src="../_graphics/check_mark.png"> the marker instances you want to combine in the panel. Click <span class="ph uicontrol">Create</span>.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-success" id="ta_set_up_predefined_trait_panels__note_os2_chq_pzb"><span class="note__title"><i class="pe-2 bi bi-lightbulb"></i>Tip:</span> You can filter the trait marker dependencies table on crop or technology.</div>
+</div>
+</li></ol></section>
+</div>
+</article><article class="topic task nested1" aria-labelledby="ariaid-title4" id="ta_setup_trait_marker_dependencies">
+<h2 class="title" id="ariaid-title4">Set up trait marker dependencies</h2>
+<div class="body taskbody">
+<section class="section context" id="ta_setup_trait_marker_dependencies__context_x4p_2bg_wqb">Set up specific trait marker dependencies for test strategists to select when creating a test strategy. Trait marker dependencies combine two <dfn class="term">BASF</dfn> sources to translate traits to the most preferred marker instance (that is the actual technique used to analyze). When a customer is interested in specific traits, the test strategist can translate this in technologies and instances based on the trait marker dependencies.</section>
+<section id="ta_setup_trait_marker_dependencies__steps_dcb_1zw_5qb"><ol class="ol steps" id="ta_setup_trait_marker_dependencies__steps_dcb_1zw_5qb"><li class="li step stepexpand">
+<span class="ph cmd">In the left blue menu, go to the <strong class="ph b">Admin</strong> section and click <span class="ph uicontrol">Trait marker dependencies</span>.</span>
+<div class="itemgroup info">
+<figure class="fig figure w-100 mw-100 p-3" id="ta_setup_trait_marker_dependencies__fig_avc_yhy_ssb">
+<img class="image figure-img img-fluid border rounded small" id="ta_setup_trait_marker_dependencies__image_ryh_t5j_xsb" src="../_graphics/trait_marker_dependencies.png">
+</figure>
+
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">At the right top of the table, click <span class="ph menucascade"><span class="ph uicontrol"><img class="image icon" id="ta_setup_trait_marker_dependencies__image_umz_tww_5qb" src="../_graphics/kebab_menu.png"></span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Create</span></span>.</span>
+</li><li class="li step stepexpand">
+<span class="ph cmd">In the <span class="keyword wintitle">Add trait marker dependency</span> window, select the relevant crop and enter traits on two levels:</span>
+<div class="itemgroup info">
+<ul class="ul" id="ta_setup_trait_marker_dependencies__ul_att_yfm_lzb">
+<li class="li">On cluster level (for example diseases)</li>
+<li class="li">On sub-cluster level</li>
+</ul>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Select the corresponding marker instances.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-success" id="ta_setup_trait_marker_dependencies__note_hyl_yfm_lzb"><span class="note__title"><i class="pe-2 bi bi-lightbulb"></i>Tip:</span> Click <img class="image icon" id="ta_setup_trait_marker_dependencies__image_hxw_4mf_wqb" src="../_graphics/select_from_database.png"> to view all options of a specific field maintained in a central ontology. Search the ontology by entering a search term at the top of the list.</div>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Optionally, add remarks.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-success" id="ta_setup_trait_marker_dependencies__note_hvk_n1m_lzb"><span class="note__title"><i class="pe-2 bi bi-lightbulb"></i>Tip:</span> You can include trait marker dependencies before they are available. Simply create the dependency and check the <span class="ph uicontrol">Available in the lab</span> box once available. </div>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Click <span class="ph uicontrol">Create</span>.</span>
+</li></ol></section>
+</div>
+</article><article class="topic task nested1" aria-labelledby="ariaid-title5" id="ta_set_up_master_data">
+<h2 class="title" id="ariaid-title5">Set up service types</h2>
+<div class="body taskbody">
+<section class="section context">Set up specific types of services for customers to select when creating a request.</section>
+<section><ol class="ol steps"><li class="li step stepexpand">
+<span class="ph cmd">In the left blue menu, go to the <strong class="ph b">Admin</strong> section and click <span class="ph uicontrol">Service types</span>.</span>
+<div class="itemgroup info">
+<figure class="fig figure w-100 mw-100 p-3" id="ta_set_up_master_data__fig_avc_yhy_ssb">
+<img class="image figure-img img-fluid border rounded small" id="ta_set_up_master_data__image_cxb_q5j_xsb" src="../_graphics/service_types.png">
+</figure>
+
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">At the right top of the table, click <span class="ph menucascade"><span class="ph uicontrol"><img class="image icon" id="ta_set_up_master_data__image_umz_tww_5qb" src="../_graphics/kebab_menu.png"></span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Create</span></span>.</span>
+</li><li class="li step stepexpand">
+<span class="ph cmd">On the <span class="keyword wintitle">Main</span> tab, enter general service type info, including meaningful analysis type names and a description to avoid confusion among customers.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-info" id="ta_set_up_master_data__note_kpw_n4t_jzb"><span class="note__title"><i class="pe-2 bi bi-info-circle-fill"></i>Notice:</span> Check the <span class="ph uicontrol">Requires testing strategy</span> box, unless the service type doesn't need a testing strategy, such as DNA isolation or a plate search from the inventory.</div>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">On the <span class="keyword wintitle">Additional info</span> tab, specify additional types of information the test strategist must provide and click <span class="ph uicontrol">Save</span>.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-info"><span class="note__title"><i class="pe-2 bi bi-pencil"></i>Note:</span> To prevent test strategists from defining a strategy without adding a particular type of additional info, click <span class="ph uicontrol"><img class="image icon" id="ta_set_up_master_data__image_e4w_hrx_zqb" src="../_graphics/add_trait_panel.png"></span> to add the info type and check the <img class="image icon" id="ta_set_up_master_data__image_bk2_g5y_xqb" src="../_graphics/green_check.png"> mandatory box.</div>
+<div role="alert" class="note alert alert-success"><span class="note__title"><i class="pe-2 bi bi-lightbulb"></i>Tip:</span> Make sure to clearly specify the kind of information you expect from the customer.</div>
+</div>
+</li></ol></section>
+</div>
+</article><article class="topic task nested1" aria-labelledby="ariaid-title6" id="ta_setup_budget_numbers">
+<h2 class="title" id="ariaid-title6">Set up budget numbers</h2>
+<div class="body taskbody">
+<section class="section context">Set up specific budget numbers for downstream invoicing for customers to select when creating a request.<div role="alert" class="note alert alert-warning"><span class="note__title"><i class="pe-2 bi bi-exclamation-circle-fill"></i>Important:</span> Budget numbers can only be defined for the business unit <strong class="ph b">Vegetable Seeds</strong>. For <strong class="ph b">Field Crops</strong>, a central database is maintained.</div></section>
+<section id="ta_setup_budget_numbers__steps_nzh_1zw_5qb"><ol class="ol steps" id="ta_setup_budget_numbers__steps_nzh_1zw_5qb"><li class="li step stepexpand">
+<span class="ph cmd">In the left blue menu, go to the <strong class="ph b">Admin</strong> section and click <span class="ph uicontrol">Budget numbers</span>.</span>
+<div class="itemgroup info">
+<figure class="fig figure w-100 mw-100 p-3" id="ta_setup_budget_numbers__fig_avc_yhy_ssb">
+<img class="image figure-img img-fluid border rounded small" id="ta_setup_budget_numbers__image_w1f_55j_xsb" src="../_graphics/budget_numbers.png">
+</figure>
+
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">At the right top of the table, click <img class="image icon" id="ta_setup_budget_numbers__image_atw_1bx_5qb" src="../_graphics/upload_budget_numbers.png">.</span>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Upload a TimeTell file and click <span class="ph uicontrol">Save</span>.</span>
+<div class="itemgroup stepresult">The codes and descriptions in your file will be placed in the list. New entries are added to the list and updated descriptions are updated in the list.</div>
+</li></ol></section>
+</div>
+</article><article class="topic task nested1" aria-labelledby="ariaid-title7" id="ta_setup_field_dependencies">
+<h2 class="title" id="ariaid-title7">Set up field dependencies</h2>
+<div class="body taskbody">
+<section class="section context" id="ta_setup_field_dependencies__context_x4p_2bg_wqb">Field dependencies help reduce the complexity of the <dfn class="term">MARqeT</dfn> system and prevent users from clicking invalid options. In order to obtain this, field dependencies link users to specific field options only valid for that group of users. This results in reduced options, as some of them become unselectable.<div role="alert" class="note alert alert-warning" id="ta_setup_field_dependencies__note_tny_zjl_xsb"><span class="note__title"><i class="pe-2 bi bi-exclamation-triangle"></i>Attention:</span> Carefully consider the field dependencies you define. You don't want to mistakenly exclude too many options.</div></section>
+<section id="ta_setup_field_dependencies__steps_dcb_1zw_5qb"><ol class="ol steps" id="ta_setup_field_dependencies__steps_dcb_1zw_5qb"><li class="li step stepexpand">
+<span class="ph cmd">In the left blue menu, go to the <strong class="ph b">Admin</strong> section and click <span class="ph uicontrol">Field dependencies</span>.</span>
+<div class="itemgroup info">
+<figure class="fig figure w-100 mw-100 p-3" id="ta_setup_field_dependencies__fig_avc_yhy_ssb">
+<img class="image figure-img img-fluid border rounded small" id="ta_setup_field_dependencies__image_n2y_55j_xsb" src="../_graphics/field_dependencies.png">
+</figure>
+
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">At the right top of the table, click <span class="ph menucascade"><span class="ph uicontrol"><img class="image icon" id="ta_setup_field_dependencies__image_umz_tww_5qb" src="../_graphics/kebab_menu.png"></span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Create</span></span>.</span>
+</li><li class="li step stepexpand">
+<span class="ph cmd">In the <span class="keyword wintitle">Add field dependency</span> window, select the relevant business unit.</span>
+</li><li class="li step stepexpand">
+<span class="ph cmd">For each required dependency:</span>
+<ol type="a" class="ol substeps" id="ta_setup_field_dependencies__substeps_mzc_2kq_pzb">
+<li class="li substep">
+<span class="ph cmd">Click <span class="ph uicontrol">Add field</span> and select the field type.</span>
+</li>
+<li class="li substep">
+<span class="ph cmd">Click <img class="image icon" id="ta_setup_field_dependencies__image_gs5_2kq_pzb" src="../_graphics/select_from_database.png"> and check <img class="image icon" id="ta_setup_field_dependencies__image_ij5_3kq_pzb" src="../_graphics/check_mark.png"> the relevant values.</span>
+</li>
+</ol>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-warning" id="ta_setup_field_dependencies__note_rsk_xly_ssb"><span class="note__title"><i class="pe-2 bi bi-exclamation-circle-fill"></i>Important:</span> Not all service types and testing strategies are available for all crops.</div>
+
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Click <span class="ph uicontrol">Create</span>.</span>
+</li></ol></section>
+</div>
+</article></article></article></main></div><script language="javascript" src="../js/popovers.js"></script><script language="javascript" src="../js/dark-mode-toggler.js"></script><footer role="contentinfo" class="mt-3 border-top bg-primary-subtle"><div class="container text-center">
+<p class="p-3">
+<small class="copyright">MARqeT for Vegetable seeds <br> copyright © BASF</small>
+</p>
+</div></footer></body></html>

@@ -1,0 +1,31 @@
+{
+  "name": "dita-to-static-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PieterjanVandenweghe/dita-to-static-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PieterjanVandenweghe/dita-to-static-site/issues"
+  },
+  "homepage": "https://github.com/PieterjanVandenweghe/dita-to-static-site#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-navigation": "^0.3.5"
+  },
+  "dependencies": {
+    "bootstrap": "^3.4.1"
+  }
+}

@@ -1,0 +1,18 @@
+---
+permalink: "search.json"
+eleventyExcludeFromCollections: "true"
+layout: ""
+---
+
+[
+{%- for item in collections.all | reverse -%}
+    {%- set url %}{{ item.url | url }}{% endset -%}
+  {
+    "url" : "{{ item.url }}",
+    "title" : "{{ item.data.title }}"
+  }{% if not loop.last %},{% endif %}
+{%- endfor -%}
+]
+
+
+

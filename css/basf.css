@@ -1,0 +1,489 @@
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: #43a047 !important;
+    }
+.bs-sidebar {
+        background-color: #1565c0 !important;
+        /*background-color: #004A96 !important;*/   
+        top: 2rem;
+    }
+
+nav a {
+        /*color: #004A96;*/
+        color: #1565c0;
+    }
+a {
+       /*color: #004A96;*/
+       color: #1565c0;
+    }
+ 
+nav ul {
+        list-style-type: none;
+        padding-left: 10px;
+    }
+    
+/*.container-xxl {
+        --bs-gutter-x: 0rem;
+    }*/
+
+    /*changes virginie*/
+/*geen knopjes links van de menu items, hover is voldoende*/
+nav .btn {
+    display: none !important;
+}
+
+/*plaats tussen de links in linker menu*/
+.bd-links a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;
+}
+
+/*witte links in side menu, goede font weight die overeenkomt met de applicaties, padding zetten zodat hele achtergrondkleur wordt meegenomen*/
+.bd-links .active, .bd-links a {
+    color: #ffffff;
+    font-weight: 450;
+    padding-left: 20px !important;
+    padding-right: 10px;
+}
+
+/*some links had a different indentation, this fixes that*/
+.bd-links .ps-3 {
+    padding-left: 20px !important;
+}
+
+/*hover color van de links in linker menu, active*/
+.bd-links .active:hover {
+    color: white;
+}
+
+/*kleur van de achtergrond links als je erop hebt geklikt = active*/
+.bd-links .active {
+    background-color: #1E88E5;
+}
+
+/*hover color van de links en achtergrond in linker menu, volledige breedte laten innemen*/
+.bd-links a:hover {
+    color: white;
+    background-color: #004A96;
+    width: 100%;
+    padding-left: 20px !important;
+    padding-right: 5px;
+}
+
+/*container waarin body (main) en sidebar zitten helemaal naar links duwen zodat je de sidebar tegen de linkerrand kan plaatsen, min-height is zodat de footer niet te hoog zweeft bij kleine paginas*/
+.bs-container {
+    margin: 0rem !important;
+    padding-left: 0rem;
+    min-height: 89% !important;
+}
+
+/*sidebar tegen de linkerrand plaatsen*/
+.bs-sidebar {
+    margin-left: 0rem;
+}
+
+/*gebruik het hele scherm, maar pas aan zodat menu niet te groot wordt, onder de 992px wijdte, geen menu links en dus ook geen padding*/
+.bs-container {
+    max-width: 100% !important;
+}
+
+@media (min-width: 992px) {
+    .bs-container {
+        grid-template-columns: 1fr 6fr !important;
+    }
+    .bs-sidebar {
+        padding-top: 100px;
+        padding-left: 5px;
+        position: fixed;
+        bottom: 0;
+        max-width: 300px;
+        margin-top: -31px;
+    }
+    /*bdSidebar zit nog in de menu als parent van de link boxes, deze moet doet gelijkgezet worden met het menu zodat de achtergrond heel het menu covert.*/
+    #bdSidebar {
+        margin-left: -10px !important;
+    }
+}
+
+/*zet de padding zodat het hele scherm niet te vol is, en body (main) positioneren zodat de tekst niet te dicht bij de rest staat*/
+.bs-main {
+    padding: 0vw 7vw;
+    margin-top: 4.5rem;
+    margin-left: 1vw;
+}
+
+/*zodat afstand tussen side bar en tekst groot genoeg blijft*/
+@media (max-width: 1400px) {
+    .bs-main {
+        margin-left: 5vw;
+    }
+}
+
+/*Het dark mode knopje niet meer tonen, de container staat er wel nog*/
+.nav-item.dropdown {
+    display: none;
+}
+
+/*De elementen in de header opschuiven naar links maar niet helemaal, om het marqet logo links te krijgen*/
+.container-xxl {
+    margin: 0px 0px 0px 5px;
+}
+
+/*search bar positionering voor verschillende screen sizes*/
+
+.ms-auto {
+    margin-right: -45vw !important;
+}
+
+@media (max-width: 1800px) {
+    .ms-auto {
+        margin-right: -40vw !important;
+    }
+}
+
+@media (max-width: 1600px) {
+    .ms-auto {
+        margin-right: -30vw !important;
+    }
+}
+
+@media (max-width: 1400px) {
+    .ms-auto {
+        margin-right:-20vw !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .ms-auto {
+        margin-right:-5vw !important;
+    }
+}
+
+/* Vanaf gsm formaten is de search niet meer zichtbaar*/
+@media (max-width: 750px) {
+    .ms-auto {
+        display: none;
+    }
+}
+
+/*drie puntjes menu weg want de searchbar blijft hoe klein het scherm ook is (searchbar zit in drie puntjes menu)*/
+.bi-three-dots::before {
+    content: none !important;
+}
+
+button.navbar-toggler.p-2:nth-child(3) {
+    display: none;
+}
+
+/*beetje plaats laten tussen hamburgermenu en BASF logo*/
+button.navbar-toggler.p-2 {
+    margin-right: 5px;
+}
+
+/*geen breadcrumbs*/
+.breadcrumb {
+    display: none;
+}
+
+/*menu kwam niet helemaal tot beneden omdat de body niet groot genoeg was!, 90vh omdat nog 10% voor feeter die niet in de body zit, geef body ook een achtergrondkleur die niet helemaal wit is #fafafa*/
+/*voorafingestelde font vervangen door die van docapp*/
+body {
+    font-family: Roboto, sans-serif !important;
+    height: 90vh;
+    background-color: #fafafa;
+}
+
+.bs-sidebar {
+    height: 100%;
+}
+
+/*css voor de logo's in de header, om te vermijden dat ze te groot zijn en de header breedte veranderen*/
+.logo-header {
+    height: 35px;
+    padding-right: 13px;
+    padding-bottom: 5px;
+}
+
+/*logo basf size in header, margin is zodat logo rechts staat, bij kleine schermgroottes is het anders*/
+.BASF-logo-header {
+    height: 35px;
+    margin-left: 480px;
+    margin-right: 20px;
+}
+
+/*Voor iPad en gsm formaten wordt het logo niet meer getoond*/
+@media (max-width: 992px) {
+    .BASF-logo-header {
+        margin-left: 40px;
+        display: none;
+    }
+}
+
+/*zorgt dat het basf logo niet op een tweede lijn komt te staan als de schermgrote kleiner wordt*/
+.navbar {
+    flex-wrap: nowrap;
+    height: 65px;
+}
+
+/*om het uitklapbara menu bij kleine schermgroottes ook een blauwe achtergrond te geven (was wit en de tekst ook dus je kon het niet lezen)*/
+.offcanvas-body {
+    background-color: #1565c0;
+}
+
+.list-unstyled.mb-0.py-3.pt-md-1 {
+    background-color: #1565c0;
+}
+
+/*css voor volledige dashboard: grid*/
+.col {
+    display: grid;
+}
+
+/*css voor de grid vanboven in het dashboard met een welkomst tekstje en een image*/
+.dashboard-top {
+    display: grid;
+    grid-template-columns: 23% 73%;
+    grid-column-gap: 3%;
+    max-height: 15%;
+}
+
+/*container voor de image, zodat we deze vierkant kunnen maken*/
+.image-container {
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 20px;
+    max-height: 200px;
+}
+
+.dashboard-image {
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+}
+
+/*grid voor de tiles op het dashboard*/
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-column-gap: 2.33%;
+    margin-top: 3%;
+}
+
+/*vergroot plaats tussen iconen en top bij kleinere schermen, en zet de iconen op twee rijen om meer scherm te vullen, ook top aanpassen aan kleinere schermgroottes*/
+@media (max-width: 1200px) {
+    .dashboard-grid {
+        display: grid;
+        margin-right: 10%;
+        grid-template-columns: 45% 45% !important;
+        grid-row-gap: 5%;
+        margin-top: 5%;
+    }
+    .dashboard-icon {
+        padding: 12% 9%;
+    }
+    .dashboard-top {
+        grid-template-columns: 30% 64%;
+    }
+}
+
+@media (max-width: 992px) {
+    .dashboard-grid {
+        display: grid;
+        margin-right: 10%;
+        grid-template-columns: 45% 45% !important;
+        grid-row-gap: 5%;
+        margin-top: 5%;
+    }
+    .dashboard-icon {
+        width: 90% !important;
+        padding: 12% 9%;
+    }
+    .dashboard-top {
+        grid-template-columns: 99%;
+    }
+    .image-container{
+        display: none;
+    }
+}
+
+/*plaats tussen hoofdtitel en wat eronder zit*/
+#ariaid-title1 {
+    margin-bottom: 40px;
+}
+
+/*plaats tussen tussentitels en body*/
+.h4 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/*tiles op het dashboard mogen elk 60% van de 50% van de grid container innemen, we willen ze ook centreren, en ze moeten een wit kader hebben als achtergrond met schaduw en afgeronde hoeken*/
+.dashboard-icon {
+    width: 100%;
+    max-width: 200px !important;
+    max-height: 200px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 8% 8%;
+    box-shadow: 10px 10px #f8f8f8;
+}
+
+/*No borders around the cards on dashboard*/
+.border, .card {
+    border: 0px solid rgba(0, 0, 0, 0) !important;
+}
+
+/*changing the font of the webhelp to fit the Breeding API+ docapp*/
+html {
+    font-family: Roboto, sans-serif !important;
+}
+
+/*footer should not have a background color*/
+.bg-primary-subtle {
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-top: none !important;
+}
+
+/*We willen iconen kleiner schalen*/
+.image.icon {
+    max-width: 30px;
+}
+
+/*lijsten eg callouts niet meer via flex maar via een grid, en de lijst mooi zetten zodat dt en dd naast elkaar komen op 1 lijn.*/
+dl {
+    display: grid;
+    grid-template-columns: max-content auto;
+}
+  
+dt {
+    grid-column-start: 1;
+}
+  
+dd {
+    grid-column-start: 2;
+}
+
+.row {
+    display: grid;
+}
+
+/*styling van de calloutkeys in de lijst, zorgen dat ze niet afgesneden worden (overflow: visible ipv hidden)*/
+
+span.ph.calloutkey { 
+
+    text-align: center; 
+    
+    display: inline-block; 
+    
+    width: 25px; 
+    
+    height: 25px; 
+    
+    border-radius: 50px; 
+    
+    border-color: #000; 
+    
+    color: #FFF; 
+    
+    border: 2px solid #000; 
+    
+    background-color: #000; 
+    
+    font-weight: normal; 
+    
+} 
+
+.text-truncate {
+    overflow: visible;
+}
+
+/*de tip blokjes worden nu weergegeven in hetzelfde groen van de docapp*/
+.alert-success {
+    --bs-alert-color: #43a047;
+    --bs-alert-bg: rgba(67, 160, 71, 0.1);
+    --bs-alert-border-color: #43a047;
+}
+
+/*de note, important en attention blokjes worden nu weergegeven in hetzelfde groen van de docapp*/
+.alert-info {
+    --bs-alert-color: #1565c0;
+    --bs-alert-bg: rgba(21, 101, 192, 0.1);
+    --bs-alert-border-color: #1565c0;
+}
+
+.alert-warning {
+    --bs-alert-color: #1565c0;
+    --bs-alert-bg: rgba(21, 101, 192, 0.1);
+    --bs-alert-border-color: #1565c0;
+}
+
+.note.alert.alert-info a {
+    text-decoration: underline;
+}
+
+.note.alert.alert-success a {
+    text-decoration: underline;
+}
+
+.note.alert.alert-warning a {
+    text-decoration: underline;
+}
+
+/*font weight van de header titel aanpassen aan docapp*/
+.navbar-brand {
+    font-weight: 500;
+}
+
+/*max grootte zetten op images*/
+.img-fluid {
+    max-height: 600px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+/*zorg dat dashboard erop geraakt zonder scrollbar*/
+.bodydiv.col {
+    margin-bottom: -30px;
+}
+
+/*shaduw onder header*/
+.sticky-top {
+    box-shadow: 0 0.5px 5px -1px #003, 0 5px 8px #00000024, 0 1px 14px #0000001f;
+}
+
+/*parent links dezelde boldness geven als child links*/
+a.link {
+    font-weight: bolder;
+}
+
+/*child links niet laten inspringen want dat doen parent links ook niet, wel plaats laten tussen child topics en de tekst erboven*/
+ul.ullinks {
+    margin: 0px;
+    margin-top: 40px;
+    padding: 0px;
+    padding-bottom: 20px;
+}
+
+/*shortdescription moet er niet anders uitzien dan standaard tekst*/
+.shortdesc.text-body-secondary.lead {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000 !important;
+}
+
+/*Links niet onderlijnen, te zwaar om te lezen*/
+a {
+    text-decoration: none;
+}
+
+/*Plaats tussen de body en related links*/
+.related-links {
+    margin-bottom: 50px;
+}
+
+article {
+    margin-bottom: 60px;
+}

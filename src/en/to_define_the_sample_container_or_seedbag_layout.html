@@ -1,0 +1,640 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><meta name="prodname" content="MARqeT"><meta name="version" content="1.0"><meta name="version" content="2.0"><meta name="version" content="3.0"><meta name="release" content="October 2021"><meta name="release" content="October 2023"><meta name="release" content="May 2024"><title>Define the sample container layout</title><script src="../js/lunr-client.js"></script><script src="../js/lunr.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="../css/common-extended.css"><link rel="stylesheet" type="text/css" href="../css/basf.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous"></head><body><div class="visually-hidden-focusable overflow-hidden p-2 bg-body-tertiary"><div class="container-xl"><a class="d-inline-flex m-1 btn btn-outline-primary btn-sm">Skip to main content</a><a href="#bs-sidebar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Skip to docs navigation</a></div></div><header role="banner" class="sticky-top"><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<div class="container-xxl">
+<!-- This shows the menu on mobile -->
+<div class="bd-navbar-toggle">
+<button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar" aria-controls="bdSidebar" aria-label="Toggle docs navigation">
+<i class="bi bi-list"></i>
+</button>
+</div>
+<a class="navbar-brand" href="index.html"><img src="../_graphics/MarqeT_logo_300.png" alt="MARqeT-logo" class="logo-header"> MARqeT Documentation </a>
+<button class="navbar-toggler p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<i class="bi bi-three-dots"></i>
+</button>
+<!--<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="#">Link One</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Link Two</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Link Three</a>
+</li>
+</ul>-->
+<ul class="navbar-nav ms-auto">
+<li class="nav-item d-flex align-items-center">
+<span class="nav-link pe-2">
+<i class="bi bi-search"></i>
+</span>
+<form class="position-relative me-auto search-box rounded">
+<input type="search" class="form-control" placeholder="Search…" aria-label="Search for…" dir="auto">
+</form>
+</li>
+</ul>
+<ul class="navbar-nav ms-auto">
+<!--
+          This is a dark/light color theme toggler.
+          It requires JavaScript to function.
+        -->
+<li class="nav-item dropdown">
+<a href="#" class="nav-link px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-color-mode" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+<span class="d-light">
+<i class="bi bi-brightness-high-fill"></i>
+</span>
+<span class="d-dark">
+<i class="bi bi-moon-stars-fill"></i>
+</span>
+<span class="d-auto">
+<i class="bi bi-circle-half"></i>
+</span>
+<span class="d-lg-none ms-2">Toggle Color Mode</span>
+</a>
+<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-color-mode" style="--bs-dropdown-min-width: 6rem;" data-bs-popper="static">
+<li>
+<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
+<i class="bi bi-brightness-high-fill"></i>
+<span class="ms-2">Light</span>
+</button>
+</li>
+<li>
+<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
+<i class="bi bi-moon-stars-fill"></i>
+<span class="ms-2">Dark</span>
+</button>
+</li>
+<li>
+<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto">
+<i class="bi bi-circle-half"></i>
+<span class="ms-2">Auto</span>
+</button>
+</li>
+</ul>
+</li>
+</ul>
+<!--</div>-->
+</div>
+<img src="../_graphics/basf-logo-white.svg" alt="BASF-logo" class="BASF-logo-header">
+</nav></header><div class="bs-container container-xxl bd-gutter mt-3 my-md-4" id="content"><div class="overflow-y-auto bs-sidebar"><div class="offcanvas-lg offcanvas-start" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel" aria-modal="true" role="dialog"><div class="offcanvas-header border-bottom"><h5 class="offcanvas-title" id="bdSidebarOffcanvasLabel">MARqeT documentation</h5><button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdSidebar"></button></div><div class="offcanvas-body flex-column h-100"><nav class="d-flex flex-align-start flex-column h-100 overflow-y-auto" role="navigation" id="bs-sidebar-nav"><div class="overflow-y-auto"><div class="flex-column bd-links"><ul class="list-unstyled mb-0 py-3 pt-md-1"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/index.html">Dashboard</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d14347e180"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d14347e180" aria-labelledby="menu-collapse-trigger-d14347e180" aria-controls="menu-collapse-d14347e180"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/to_introduction.html">What is MARqeT</a></div><div id="menu-collapse-d14347e180" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_purpose_and_goals.html">Why we need MARqeT</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_overview_process.html">The MARqeT process</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_user_roles.html">User roles</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/re_user_role_permissions.html">User role permissions</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d14347e276"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d14347e276" aria-labelledby="menu-collapse-trigger-d14347e276" aria-controls="menu-collapse-d14347e276"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/to_getting_started_0.html">Getting started</a></div><div id="menu-collapse-d14347e276" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row" id="menu-collapse-trigger-d14347e297"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d14347e297" aria-labelledby="menu-collapse-trigger-d14347e297" aria-controls="menu-collapse-d14347e297"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/ta_define_settings.html#ta_define_settings">Define user settings</a></div><div id="menu-collapse-d14347e297" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_define_settings.html#co_necessary_data_to_define_settings">Data for defining user settings</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_view_dashboard.html">Dashboard</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_notifications.html">Notifications</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d14347e374"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d14347e374" aria-labelledby="menu-collapse-trigger-d14347e374" aria-controls="menu-collapse-d14347e374"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/co_manage_master_data.html#ta_manage_master_data">Master data</a></div><div id="menu-collapse-d14347e374" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_manage_master_data.html#ta_setup_marker_panels">Set up predefined marker panels</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_manage_master_data.html#ta_set_up_predefined_trait_panels">Set up predefined trait panels</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_manage_master_data.html#ta_setup_trait_marker_dependencies">Set up trait marker dependencies</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_manage_master_data.html#ta_set_up_master_data">Set up service types</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_manage_master_data.html#ta_setup_budget_numbers">Set up budget numbers</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_manage_master_data.html#ta_setup_field_dependencies">Set up field dependencies</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_report_issue.html">Report an issue</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d14347e510"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d14347e510" aria-labelledby="menu-collapse-trigger-d14347e510" aria-controls="menu-collapse-d14347e510"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/to_module_1.html">Request form and preplanning</a></div><div id="menu-collapse-d14347e510" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_requests_list.html">Requests list</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d14347e554"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d14347e554" aria-labelledby="menu-collapse-trigger-d14347e554" aria-controls="menu-collapse-d14347e554"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/ta_creating_request.html#ta_creating_request">Create a request</a></div><div id="menu-collapse-d14347e554" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_creating_request.html#co_data_for_creating_request">Data for creating a request</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_archive_request.html">Cancel a request</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_duplicate_request.html">Duplicate a request</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_upload_requests_in_batch.html">Upload requests in batch</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_comment_on_request.html">Comment on a request</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_preplanning_calendar.html">Preplanning calendar</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d14347e679"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0 active" data-bs-target="#menu-collapse-d14347e679" aria-expanded="true" aria-current="true" aria-labelledby="menu-collapse-trigger-d14347e679" aria-controls="menu-collapse-d14347e679"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/to_module_3.html">Sample Container Generator</a></div><div id="menu-collapse-d14347e679" class="collapse show"><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_source_types.html">Source types</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_criteria_for_bag_or_plate_layout.html">Criteria for container layout</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_filling_options.html">Filling options</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d14347e757"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0 active" data-bs-target="#menu-collapse-d14347e757" aria-expanded="true" aria-current="true" aria-labelledby="menu-collapse-trigger-d14347e757" aria-controls="menu-collapse-d14347e757"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1 active" href="../en/to_define_the_sample_container_or_seedbag_layout.html#to_define_the_containeror_seedbag_setup">Define the sample container layout</a></div><div id="menu-collapse-d14347e757" class="collapse show"><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row" id="menu-collapse-trigger-d14347e774"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d14347e774" aria-labelledby="menu-collapse-trigger-d14347e774" aria-controls="menu-collapse-d14347e774"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/to_define_the_sample_container_or_seedbag_layout.html#to_using_prism_entries">Using PRISM as a source</a></div><div id="menu-collapse-d14347e774" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_prism_book">Select a book</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_observation_units_prism">Select the observation units</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_order_prism">Change the observation unit order</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_container_layout_prism">Define the container layout</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_using_qa_nautilus_worklists">Using QA Nautilus worklists</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d14347e876"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d14347e876" aria-labelledby="menu-collapse-trigger-d14347e876" aria-controls="menu-collapse-d14347e876"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/to_define_the_sample_container_or_seedbag_layout.html#using_external_samples">Using external samples</a></div><div id="menu-collapse-d14347e876" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_template_external">Upload a csv template</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_container_layout_external">Define the container layout</a></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_using_dna_plates">Using DNA plates</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d14347e944"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d14347e944" aria-labelledby="menu-collapse-trigger-d14347e944" aria-controls="menu-collapse-d14347e944"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/to_define_the_sample_container_or_seedbag_layout.html#using_dna_cherry_pick_plates">Using DNA cherry pick plates</a></div><div id="menu-collapse-d14347e944" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_dna_plates_cherry">Select DNA plates</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_observation_units_cherry">Select the observation units</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_order_cherry">Change the observation unit order</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/to_define_the_sample_container_or_seedbag_layout.html#ta_container_layout_cherry">Define the container layout</a></div></li></ul></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_manage_sample_container_layout_screens.html">Sample container layout screens</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d14347e1046"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d14347e1046" aria-labelledby="menu-collapse-trigger-d14347e1046" aria-controls="menu-collapse-d14347e1046"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/to_module_2.html">Testing Strategy</a></div><div id="menu-collapse-d14347e1046" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_types_of_testing_strategies.html">Testing strategy types</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/co_additional_information_types.html">Additional information types</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d14347e1107"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d14347e1107" aria-labelledby="menu-collapse-trigger-d14347e1107" aria-controls="menu-collapse-d14347e1107"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/co_create_a_testing_strategy.html">Create a testing strategy</a></div><div id="menu-collapse-d14347e1107" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_as_a_customer.html">As a customer</a></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d14347e1141"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d14347e1141" aria-labelledby="menu-collapse-trigger-d14347e1141" aria-controls="menu-collapse-d14347e1141"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/ta_as_a_test_strategist.html">As a test strategist</a></div><div id="menu-collapse-d14347e1141" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_using_a_trait_panel.html">Using a trait panel</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_using_a_predefined_panel_test_strategist.html">Using a predefined panel</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/custom_marker_instances.html">Using custom marker instances</a></div></li></ul></div></li></ul></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_link_containers_to_a_testing_strategy.html">Link containers to a testing strategy</a></div></li></ul></div></li><li><div class="d-flex flex-row" id="menu-collapse-trigger-d14347e1226"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0" data-bs-target="#menu-collapse-d14347e1226" aria-labelledby="menu-collapse-trigger-d14347e1226" aria-controls="menu-collapse-d14347e1226"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><a class="d-inline-flex align-items-center flex-shrink-1 ps-1" href="../en/to_module_4.html">Track and Trace</a></div><div id="menu-collapse-d14347e1226" class="collapse "><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../en/ta_create_a_shipment.html">Create and submit a shipment</a></div></li></ul></div></li></ul></div></div></nav></div></div></div><main role="main" class="bs-main me-3"><article role="article" class="bs-content" aria-labelledby="ariaid-title1"><article class="nested0" aria-labelledby="ariaid-title1" id="to_define_the_containeror_seedbag_setup">
+<h1 class="title" id="ariaid-title1">Define the sample container layout</h1>
+<div class="body">
+<p class="p">When a lab wants to perform an analysis on your sample container, they need to know the exact content of each well. To define the content of each well, that is, the layout of a sample container, you first need to define a <a class="xref" href="co_source_types.html">source type</a>. Next, <dfn class="term">MARqeT</dfn> allows you to setup the screen in advance or in real-time:</p>
+<ol class="ol" id="to_define_the_containeror_seedbag_setup__ol_kmx_33p_mzb">
+<li class="li">You can add observation units to the virtual sample container in advance and subsequently sample your containers.</li>
+<li class="li">You can sample your containers in real-time by scanning the individual plants one by one and create the virtual sample container as you go.</li>
+</ol>
+</div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="to_module_3.html" title="Set up the layout of the sample containers.">Sample Container Generator</a></div></div></nav><article class="topic nested1" aria-labelledby="ariaid-title2" lang="en-US" id="to_using_prism_entries">
+<h2 class="title" id="ariaid-title2">Using PRISM as a source</h2>
+<div class="body">
+<p class="p">When using PRISM as a source, perform the following steps to setup the container and define its layout:</p>
+<ol class="ol" id="to_using_prism_entries__ol_uxd_3d2_hsb">
+<li class="li"><a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_prism_book">Select a book.</a></li>
+<li class="li"><a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_observation_units_prism">Select the observation units.</a></li>
+<li class="li">Optionally, <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_order_prism">change the observation unit order.</a></li>
+<li class="li"><a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_container_layout_prism">Define the container layout.</a></li>
+</ol>
+</div>
+<article class="topic task nested2" aria-labelledby="ariaid-title3" id="ta_prism_book">
+<h3 class="title" id="ariaid-title3">Select a book</h3>
+<div class="body taskbody">
+<section class="section prereq" id="ta_prism_book__prereq_dq4_wc4_5qb">To set up the layout of a container, first <a class="xref" href="ta_creating_request.html#ta_creating_request">create a request</a>.</section>
+<section class="section context" id="ta_prism_book__context_wwk_mh5_hsb">The <dfn class="term">MARqeT</dfn> sample container generator module is linked to the <dfn class="term">PRISM</dfn> software. To add observation units from Nursery Field Books to the module, add these in the <dfn class="term">PRISM</dfn> software. When setting up the container layout, you can retrieve observation unit information from these books.</section>
+<section id="ta_prism_book__steps_xwk_mh5_hsb"><ol class="ol steps" id="ta_prism_book__steps_xwk_mh5_hsb"><li class="li step stepexpand">
+<span class="ph cmd">To open the <span class="keyword wintitle">Requests</span> list, go to the left blue menu and click <span class="ph uicontrol">Requests</span>.</span>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Select the request you want to generate sample containers for in the <span class="ph uicontrol">Request</span> list.</span>
+<div class="itemgroup stepresult">The request appears in the left blue menu.</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">In the left blue menu, under the request, select <span class="ph uicontrol">Sample container generator</span>.</span>
+<div class="itemgroup info">
+<figure class="fig figure w-100 mw-100 p-3" id="ta_prism_book__fig_c2w_pyh_5qb">
+<img class="image figure-img img-fluid border rounded fmdpi:300" id="ta_prism_book__image_onq_ys3_5qb" src="../_graphics/tissue_container_generator.png">
+
+</figure>
+
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Select <span class="ph uicontrol">PRISM nursery field book</span> as a <a class="xref" href="co_source_types.html">source type</a>.</span>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Select how you want to add your field books: <span class="ph uicontrol">Manual</span> or <span class="ph uicontrol">By</span> uploading a <span class="ph uicontrol">file</span>.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-info" id="ta_prism_book__note_cbs_bh5_4zb"><span class="note__title"><i class="pe-2 bi bi-pencil"></i>Note:</span> To ensure you use the correct format, download the available template. If you choose <span class="ph uicontrol">by file (with positions)</span>, add the correct positions to each row.</div>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">If you selected <span class="ph uicontrol">Manual</span>, add the books you want to use to fill the sample container:</span>
+<ol type="a" class="ol substeps" id="ta_prism_book__substeps_ywk_mh5_hsb">
+<li class="li substep">
+<span class="ph cmd">Click <span class="ph uicontrol">Add</span>.</span>
+<div class="itemgroup stepresult">The tissue type you selected when creating a request will define the books you can select: for plants nursery field books are available, while inventory books are used for seeds.</div>
+</li>
+<li class="li substep">
+<span class="ph cmd">Check the correct books in the pop-up window and click <span class="ph uicontrol">Add</span>.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-success" id="ta_prism_book__note_v5x_fgg_yrb"><span class="note__title"><i class="pe-2 bi bi-lightbulb"></i>Tip:</span> Use the filters at the top of the list to search specific books.</div>
+</div>
+</li>
+<li class="li substep">
+<span class="ph cmd">Optionally, define the sample container options. Remember, fixed empties are used for control, while floating empties identify the container.</span>
+</li>
+</ol>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Click <span class="ph uicontrol">Next</span>.</span>
+</li></ol></section>
+<section class="section postreq" id="ta_prism_book__postreq_ph5_l5p_5qb">If you selected <span class="ph uicontrol">Manual</span>, the next step is to <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_observation_units_prism">select the observation units</a>. If you selected <span class="ph uicontrol">By file</span>, you can immediately continue to <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_container_layout_prism">defining the container layout contents</a>.</section>
+</div>
+</article><article class="topic task nested2" aria-labelledby="ariaid-title4" id="ta_observation_units_prism">
+<h3 class="title" id="ariaid-title4">Select the observation units</h3>
+<div class="body taskbody">
+<section class="section prereq" id="ta_observation_units_prism__prereq_nwv_pbg_yrb">First <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_prism_book">select a book</a>.</section>
+<section class="section context">After filling in all information for your sample container setup, you select the correct observation units you want to add to your container.</section>
+<section><ol class="ol steps"><li class="li step stepexpand">
+<span class="ph cmd">If you selected more than one book, select the correct book at the top of the list.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-success" id="ta_observation_units_prism__note_zkg_mhc_zrb"><span class="note__title"><i class="pe-2 bi bi-lightbulb"></i>Tip:</span> If necessary, click <span class="ph uicontrol">Setup</span> in the trail navigator on top to go back. Click <span class="ph uicontrol">Clear next steps to edit setup</span> to change the books.</div>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Select the correct observation units in the list.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-success" id="ta_observation_units_prism__note_v5x_fgg_yrb"><span class="note__title"><i class="pe-2 bi bi-lightbulb"></i>Tip:</span> Use the filters at the top of the list to search for specific observation units. Hold the <span class="keyword cmdname">shift</span> key to select two observation units and all observation units in between.</div>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Click <span class="ph menucascade"><span class="ph uicontrol"><img class="image icon" id="ta_observation_units_prism__image_wyc_2gg_yrb" src="../_graphics/kebab_menu.png"></span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Mark (#) for sampling</span></span>.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-info" id="ta_observation_units_prism__note_c2c_xjz_ssb"><span class="note__title"><i class="pe-2 bi bi-pencil"></i>Note:</span> To correct an error, select the incorrect observation units and click <span class="ph menucascade"><span class="ph uicontrol"><img class="image icon" id="ta_observation_units_prism__image_fg2_yjz_ssb" src="../_graphics/kebab_menu.png"></span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Unmark (#) for sampling</span></span>.</div>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Click <span class="ph uicontrol">Next</span>.</span>
+<div class="itemgroup info">
+
+</div>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-warning" id="ta_observation_units_prism__note_dxv_ff5_4zb"><span class="note__title"><i class="pe-2 bi bi-exclamation-circle-fill"></i>Important:</span> Once you add an observation unit from a Nursery Field book, an ID is generated by <dfn class="term">MARqeT</dfn> in the background. The ID captures the link to the original observation unit in <dfn class="term">PRISM</dfn> to ensure traceability.</div>
+</div>
+</li></ol></section>
+<section class="section postreq" id="ta_observation_units_prism__postreq_dq3_qbg_yrb">The next step is to <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_container_layout_prism">define the container layout</a> or optionally <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_order_prism">change the observation unit order</a> first.</section>
+</div>
+</article><article class="topic task nested2" aria-labelledby="ariaid-title5" id="ta_order_prism">
+<h3 class="title" id="ariaid-title5">Change the observation unit order</h3>
+<div class="body taskbody">
+<section class="section prereq" id="ta_order_prism__prereq_nwv_pbg_yrb">First <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_prism_book">select a book</a> and <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_observation_units_prism">select the observation units</a>.</section>
+<section class="section context">For large requests with many sample containers, you can sort observation units (to a degree) without having to review each well. Only observation units selected during the <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_observation_units_prism">observation unit selection</a> are available in this list. Observation units are displayed in the default order of the book.<div role="alert" class="note alert alert-warning" id="ta_order_prism__note_iwb_ltg_yrb"><span class="note__title"><i class="pe-2 bi bi-exclamation-circle-fill"></i>Important:</span> This feature is not created to micromanage each setup of the sample container. For highly customized cases, use the <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_container_layout_prism">container layout screen</a>.</div></section>
+<section><ol class="ol steps"><li class="li step stepexpand">
+<span class="ph cmd">Select the observation units you want to re-order.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-success" id="ta_order_prism__note_zkg_mhc_zrb"><span class="note__title"><i class="pe-2 bi bi-lightbulb"></i>Tip:</span> If necessary, click <span class="ph uicontrol">Setup</span> or <span class="ph uicontrol">Observation unit select</span> in the trail navigator on top to change the books or observation units.</div>
+</div>
+</li><li class="li step stepexpand page-break-before">
+<span class="ph cmd">Click <img class="image icon" id="ta_order_prism__image_g3w_byg_yrb" src="../_graphics/kebab_menu.png"> and select the way you want to re-order:</span>
+<div class="itemgroup info page-break-before">
+<div class="border pt-3 ps-3 pe-3"><table class="table table-bordered" id="ta_order_prism__table_wh5_wgr_xsb"><colgroup><col><col></colgroup><thead class="thead">
+<tr>
+<th class="entry" id="ta_order_prism__table_wh5_wgr_xsb__entry__1">Option</th>
+<th class="entry" id="ta_order_prism__table_wh5_wgr_xsb__entry__2">Outcome</th>
+</tr>
+</thead><tbody class="tbody">
+<tr>
+<td class="entry" headers="ta_order_prism__table_wh5_wgr_xsb__entry__1"><span class="ph uicontrol">Order</span></td>
+<td class="entry" headers="ta_order_prism__table_wh5_wgr_xsb__entry__2">Order the selection based on specific columns:<ol class="ol" type="a" id="ta_order_prism__ol_ypx_zgr_xsb">
+<li class="li">Select the fields you want to use to order ascending or descending.</li>
+<li class="li">Click <span class="ph uicontrol">Order</span>.</li>
+</ol></td>
+</tr>
+<tr>
+<td class="entry" headers="ta_order_prism__table_wh5_wgr_xsb__entry__1"><span class="ph uicontrol">Move to beginning</span></td>
+<td class="entry" headers="ta_order_prism__table_wh5_wgr_xsb__entry__2">Move the selection to the beginning of the list.</td>
+</tr>
+<tr>
+<td class="entry" headers="ta_order_prism__table_wh5_wgr_xsb__entry__1"><span class="ph uicontrol">Move to position</span></td>
+<td class="entry" headers="ta_order_prism__table_wh5_wgr_xsb__entry__2">Move the selection to a specific position:<ol class="ol" type="a" id="ta_order_prism__ol_qtg_bhr_xsb">
+<li class="li">Enter a list position number.</li>
+<li class="li">Click <span class="ph uicontrol">Move</span>.</li>
+</ol></td>
+</tr>
+<tr>
+<td class="entry" headers="ta_order_prism__table_wh5_wgr_xsb__entry__1"><span class="ph uicontrol">Move to end</span></td>
+<td class="entry" headers="ta_order_prism__table_wh5_wgr_xsb__entry__2">Move the selection to the end of the list.</td>
+</tr>
+<tr>
+<td class="entry" headers="ta_order_prism__table_wh5_wgr_xsb__entry__1"><span class="ph uicontrol">Remove</span></td>
+<td class="entry" headers="ta_order_prism__table_wh5_wgr_xsb__entry__2">Remove the selection.</td>
+</tr>
+</tbody></table></div>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Click <span class="ph uicontrol">Next</span>.</span>
+</li></ol></section>
+<section class="section postreq" id="ta_order_prism__postreq_gpw_n1h_yrb">The next step is to <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_container_layout_prism">define the container layout</a>.</section>
+</div>
+</article><article class="topic task nested2" aria-labelledby="ariaid-title6" id="ta_container_layout_prism">
+<h3 class="title" id="ariaid-title6">Define the container layout</h3>
+<div class="body taskbody">
+<section class="section prereq" id="ta_container_layout_prism__prereq_fww_b5p_5qb">To set up the layout of a sample container, first <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_prism_book">select the field books to sample from</a>, <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_observation_units_prism">select the observation units</a>, and optionally <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_order_prism">change the observation unit order</a>. Additionally, check the <a class="xref" href="co_criteria_for_bag_or_plate_layout.html">criteria for the container layout</a> and the <a class="xref" href="co_filling_options.html">filling options</a>.</section>
+<section class="section context">After changing the observation unit order, you define the layout of your sample container.</section>
+<section><ol class="ol steps"><li class="li step stepexpand">
+<span class="ph cmd">If you want to assign all observation units to the sample container, click <span class="ph menucascade"><span class="ph uicontrol"><img class="image icon" id="ta_container_layout_prism__image_uvl_lr3_d1c" src="../_graphics/kebab_menu.png"></span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Assign all observation units by order #</span></span>.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-info" id="ta_container_layout_prism__note_htp_khr_xsb"><span class="note__title"><i class="pe-2 bi bi-info-circle-fill"></i>Notice:</span> All previous defined sample container layouts are cleared when selecting this option.</div>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">If you want to assign specific observation units to the sample container, select <img class="image icon" id="ta_container_layout_prism__image_abq_csn_wqb" src="../_graphics/green_check.png"> the observation units, click <img class="image icon" id="ta_container_layout_prism__image_qzr_pr3_d1c" src="../_graphics/kebab_menu.png"> and choose a filling option:</span>
+<div class="itemgroup info">
+<div class="border pt-3 ps-3 pe-3"><table class="table table-bordered keep-together" id="ta_container_layout_prism__table_vp2_3hr_xsb"><colgroup><col><col></colgroup><thead class="thead">
+<tr>
+<th class="entry" id="ta_container_layout_prism__table_vp2_3hr_xsb__entry__1">Option</th>
+<th class="entry" id="ta_container_layout_prism__table_vp2_3hr_xsb__entry__2">Outcome</th>
+</tr>
+</thead><tbody class="tbody">
+<tr>
+<td class="entry" headers="ta_container_layout_prism__table_vp2_3hr_xsb__entry__1"><span class="ph uicontrol">Add selected observation units (#) to selected position</span></td>
+<td class="entry" headers="ta_container_layout_prism__table_vp2_3hr_xsb__entry__2">Add the selected observation units to the selected well.</td>
+</tr>
+<tr>
+<td class="entry" headers="ta_container_layout_prism__table_vp2_3hr_xsb__entry__1"><span class="ph uicontrol">Assign selected observation units (#) to empty positions as from selected position</span></td>
+<td class="entry" headers="ta_container_layout_prism__table_vp2_3hr_xsb__entry__2">Add the selected observation units to the first empty wells starting from the selected well.</td>
+</tr>
+<tr>
+<td class="entry" headers="ta_container_layout_prism__table_vp2_3hr_xsb__entry__1"><span class="ph uicontrol">Assign selected observation units (#) after last filled position</span></td>
+<td class="entry" headers="ta_container_layout_prism__table_vp2_3hr_xsb__entry__2">Add the selected observation units to the first empty wells after the last filled well.</td>
+</tr>
+
+</tbody></table></div>
+<div role="alert" class="note alert alert-info keep-together" id="ta_container_layout_prism__note_fgt_js2_tsb"><span class="note__title"><i class="pe-2 bi bi-pencil"></i>Note:</span> The following tips may help you fill a sample container:<ul class="ul" id="ta_container_layout_prism__ul_xnl_x2l_xsb">
+<li class="li">Hold the <span class="keyword cmdname">shift</span> key to select two observation units and all observation units in between.</li>
+<li class="li">For small setups, select <img class="image icon" id="ta_container_layout_prism__image_uss_x2l_xsb" src="../_graphics/drag_and_drop.png"> next to the observation unit of your choice and drag to the correct well on the sample container.</li>
+<li class="li">If no selection is made, all observation units are implicitly selected.</li>
+<li class="li">To empty a well, go to the list view of the sample container and select <span class="ph menucascade"><span class="ph uicontrol"><img class="image icon" id="ta_container_layout_prism__image_ky1_bfl_xsb" src="../_graphics/kebab_menu.png"></span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Clear positions</span></span>.</li>
+</ul></div>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">To finalize the sample container setup, go to the top right of the screen and click <span class="ph uicontrol">Mark complete</span>.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-warning" id="ta_container_layout_prism__note_zvj_jqb_zrb"><span class="note__title"><i class="pe-2 bi bi-exclamation-circle-fill"></i>Important:</span> To regain the ability to make adjustments, click <span class="ph uicontrol">Mark incomplete</span>. Be aware that this will reset the <a class="xref" href="ta_link_containers_to_a_testing_strategy.html">linkage</a> matrix.</div>
+
+
+</div>
+</li></ol></section>
+<section class="section postreq" id="ta_container_layout_prism__postreq_hql_vrp_5qb">In the next step, you need to <a class="xref" href="co_create_a_testing_strategy.html">create a testing strategy</a>.</section>
+</div>
+</article></article><article class="topic task nested1" aria-labelledby="ariaid-title7" lang="en-US" id="ta_using_qa_nautilus_worklists">
+<h2 class="title" id="ariaid-title7">Using QA Nautilus worklists</h2>
+<div class="body taskbody">
+<section class="section prereq" id="ta_using_qa_nautilus_worklists__prereq_j4y_fxr_lzb">To set up the layout of a sample container, first <a class="xref" href="ta_creating_request.html#ta_creating_request">create a request</a>.</section>
+<section class="section context">If you use <dfn class="term">Nautilus</dfn> as your observation units source, prepare your observation units, their order and the sample container setup as a worklist in the <dfn class="term">Nautilus</dfn> tool. When setting up the container layout, <dfn class="term">MARqeT</dfn> automatically configures the sample containers.</section>
+<section><ol class="ol steps"><li class="li step stepexpand">
+<span class="ph cmd">To open the <span class="keyword wintitle">Requests</span> list, go to the left blue menu and click <span class="ph uicontrol">Requests</span>.</span>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Select the request you want to generate sample containers for in the <span class="ph uicontrol">Request</span> list.</span>
+<div class="itemgroup stepresult">The request appears in the left blue menu.</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">In the left blue menu, under the request, select <span class="ph uicontrol">Sample container generator</span>.</span>
+<div class="itemgroup info">
+<figure class="fig figure w-100 mw-100 p-3" id="ta_using_qa_nautilus_worklists__fig_c2w_pyh_5qb">
+<img class="image figure-img img-fluid border rounded fmdpi:300" id="ta_using_qa_nautilus_worklists__image_onq_ys3_5qb" src="../_graphics/tissue_container_generator.png">
+
+</figure>
+
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Select <span class="ph uicontrol">QA Nautilus</span> as a <a class="xref" href="co_source_types.html">source type</a>.</span>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Select the container type.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-warning" id="ta_using_qa_nautilus_worklists__note_jxp_nxr_lzb"><span class="note__title"><i class="pe-2 bi bi-exclamation-circle-fill"></i>Important:</span> Be aware that the worklist must be ready in <dfn class="term">Nautilus</dfn> to synchronize with <dfn class="term">MARqeT</dfn>.</div>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Select the worklist and click <span class="ph uicontrol">Next</span>.</span>
+<div class="itemgroup stepresult"><dfn class="term">MARqeT</dfn> automatically generates the sample container layout.</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">To finalize the sample container setup, go to the top right of the screen and click <span class="ph uicontrol">Mark complete</span>.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-warning" id="ta_using_qa_nautilus_worklists__note_zvj_jqb_zrb"><span class="note__title"><i class="pe-2 bi bi-exclamation-circle-fill"></i>Important:</span> To regain the ability to make adjustments, click <span class="ph uicontrol">Mark incomplete</span>. Be aware that this will reset the <a class="xref" href="ta_link_containers_to_a_testing_strategy.html">linkage</a> matrix.</div>
+</div>
+</li></ol></section>
+<section class="section postreq" id="ta_using_qa_nautilus_worklists__postreq_hql_vrp_5qb">In the next step, you need to <a class="xref" href="co_create_a_testing_strategy.html">create a testing strategy</a>.</section>
+</div>
+</article><article class="topic nested1" aria-labelledby="ariaid-title8" id="using_external_samples">
+<h2 class="title" id="ariaid-title8">Using external samples</h2>
+<div class="body">
+<p class="p">When using external samples, perform the following steps to setup the container and define its layout:</p>
+<ol class="ol" id="using_external_samples__ol_uxd_3d2_hsb">
+<li class="li"><a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_template_external">Upload a csv template.</a></li>
+<li class="li"><a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_container_layout_external">Define the container layout.</a></li>
+</ol>
+</div>
+<article class="topic task nested2" aria-labelledby="ariaid-title9" lang="en-US" id="ta_template_external">
+<h3 class="title" id="ariaid-title9">Upload a csv template</h3>
+<div class="body taskbody">
+<section class="section prereq" id="ta_template_external__prereq_bnw_nns_lzb">To set up the layout of a sample container, first <a class="xref" href="ta_creating_request.html#ta_creating_request">create a request</a>.</section>
+<section class="section context">If you use external samples as your observation unit source, <dfn class="term">MARqeT</dfn> does not have a source system to use. When setting up the sample container layout, fill out the available template to provide any information necessary.</section>
+<section><ol class="ol steps"><li class="li step stepexpand">
+<span class="ph cmd">To open the <span class="keyword wintitle">Requests</span> list, go to the left blue menu and click <span class="ph uicontrol">Requests</span>.</span>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Select the request you want to generate sample containers for in the <span class="ph uicontrol">Request</span> list.</span>
+<div class="itemgroup stepresult">The request appears in the left blue menu.</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">In the left blue menu, under the request, select <span class="ph uicontrol">Sample container generator</span>.</span>
+<div class="itemgroup info">
+<figure class="fig figure w-100 mw-100 p-3" id="ta_template_external__fig_c2w_pyh_5qb">
+<img class="image figure-img img-fluid border rounded fmdpi:300" id="ta_template_external__image_onq_ys3_5qb" src="../_graphics/tissue_container_generator.png">
+
+</figure>
+
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Select <span class="ph uicontrol">External</span> as <a class="xref" href="co_source_types.html">source type</a>.</span>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Download and fill in the csv template.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-info" id="ta_template_external__note_v5l_ltt_lzb"><span class="note__title"><i class="pe-2 bi bi-pencil"></i>Note:</span> The csv template has the following fields:<table class="simpletable frame-all" id="ta_template_external__simpletable_ncy_mtt_lzb"><colgroup><col style="width:33.33333333333333%"><col style="width:33.33333333333333%"><col style="width:33.33333333333333%"></colgroup><thead><tr class="sthead">
+<th class="stentry" scope="col" id="ta_template_external__simpletable_ncy_mtt_lzb__stentry__1">Observation unit ID</th>
+<th class="stentry" scope="col" id="ta_template_external__simpletable_ncy_mtt_lzb__stentry__2">Observation unit name</th>
+<th class="stentry" scope="col" id="ta_template_external__simpletable_ncy_mtt_lzb__stentry__3">Source reference ID</th>
+</tr></thead><tbody><tr class="strow">
+<td class="stentry" headers="ta_template_external__simpletable_ncy_mtt_lzb__stentry__1"><dfn class="term">BASF</dfn> sample ID, for example 21mrgm00125 (Mandatory)</td>
+<td class="stentry" headers="ta_template_external__simpletable_ncy_mtt_lzb__stentry__2">Readable name</td>
+<td class="stentry" headers="ta_template_external__simpletable_ncy_mtt_lzb__stentry__3">Unique ID outside <dfn class="term">BASF</dfn> for traceability</td>
+</tr></tbody></table>Be aware that the order of your template is the order in which the observation unit will placed in your plate.</div>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Upload the template.</span>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Select the container type, the number of fixed empties and whether or not you want to include floating empties.</span>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Click <span class="ph uicontrol">Next</span>.</span>
+<div class="itemgroup info">The information from the template appears in the sample container layout screen.</div>
+</li></ol></section>
+<section class="section postreq" id="ta_template_external__postreq_pcf_h3v_4zb">The next step is to <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_container_layout_external">define the container layout</a>.</section>
+</div>
+</article><article class="topic task nested2" aria-labelledby="ariaid-title10" id="ta_container_layout_external">
+<h3 class="title page-break-before" id="ariaid-title10">Define the container layout</h3>
+<div class="body taskbody">
+<section class="section prereq" id="ta_container_layout_external__prereq_fww_b5p_5qb">To set up the layout of a sample container, first <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_template_external">upload a csv template</a>. Additionally, check the <a class="xref" href="co_criteria_for_bag_or_plate_layout.html">criteria for the container layout</a> and the <a class="xref" href="co_filling_options.html">filling options</a>.</section>
+<section><ol class="ol steps"><li class="li step stepexpand">
+<span class="ph cmd">If you want to assign all observation unit to the container, click <span class="ph menucascade"><span class="ph uicontrol"><img class="image icon" id="ta_container_layout_external__image_uvl_lr3_d1c" src="../_graphics/kebab_menu.png"></span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Assign all observation units by order #</span></span>.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-info" id="ta_container_layout_external__note_htp_khr_xsb"><span class="note__title"><i class="pe-2 bi bi-info-circle-fill"></i>Notice:</span> All previous defined sample container layouts are cleared when selecting this option.</div>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">If you want to assign specific observation units to the sample container, select <img class="image icon" id="ta_container_layout_external__image_abq_csn_wqb" src="../_graphics/green_check.png"> the observation units, click <img class="image icon" id="ta_container_layout_external__image_qzr_pr3_d1c" src="../_graphics/kebab_menu.png"> and choose a filling option:</span>
+<div class="itemgroup info">
+<div class="border pt-3 ps-3 pe-3"><table class="table table-bordered" id="ta_container_layout_external__table_vp2_3hr_xsb"><colgroup><col><col></colgroup><thead class="thead">
+<tr>
+<th class="entry" id="ta_container_layout_external__table_vp2_3hr_xsb__entry__1">Option</th>
+<th class="entry" id="ta_container_layout_external__table_vp2_3hr_xsb__entry__2">Outcome</th>
+</tr>
+</thead><tbody class="tbody">
+<tr>
+<td class="entry" headers="ta_container_layout_external__table_vp2_3hr_xsb__entry__1"><span class="ph uicontrol">Add selected observation units (#) to selected position</span></td>
+<td class="entry" headers="ta_container_layout_external__table_vp2_3hr_xsb__entry__2">Add the selected observation units to the selected well.</td>
+</tr>
+<tr>
+<td class="entry" headers="ta_container_layout_external__table_vp2_3hr_xsb__entry__1"><span class="ph uicontrol">Assign selected observation units (#) to empty positions as from selected position</span></td>
+<td class="entry" headers="ta_container_layout_external__table_vp2_3hr_xsb__entry__2">Add the selected observation units to the first empty wells starting from the selected well.</td>
+</tr>
+<tr>
+<td class="entry" headers="ta_container_layout_external__table_vp2_3hr_xsb__entry__1"><span class="ph uicontrol">Assign selected observation units (#) after last filled position</span></td>
+<td class="entry" headers="ta_container_layout_external__table_vp2_3hr_xsb__entry__2">Add the selected observation units to the first empty wells after the last filled well.</td>
+</tr>
+
+</tbody></table></div>
+<div role="alert" class="note alert alert-info" id="ta_container_layout_external__note_fgt_js2_tsb"><span class="note__title"><i class="pe-2 bi bi-pencil"></i>Note:</span> The following tips may help you fill a sample container:<ul class="ul" id="ta_container_layout_external__ul_xnl_x2l_xsb">
+<li class="li">Hold the <span class="keyword cmdname">shift</span> key to select two observation units and all observation units in between.</li>
+<li class="li">For small setups, select <img class="image icon" id="ta_container_layout_external__image_uss_x2l_xsb" src="../_graphics/drag_and_drop.png"> next to the observation unit of your choice and drag to the correct well on the sample container.</li>
+<li class="li">If no selection is made, all observation units are implicitly selected.</li>
+<li class="li">To empty a well, go to the list view of the sample container and select <span class="ph menucascade"><span class="ph uicontrol"><img class="image icon" id="ta_container_layout_external__image_ky1_bfl_xsb" src="../_graphics/kebab_menu.png"></span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Clear positions</span></span>.</li>
+</ul></div>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">To finalize the sample container setup, go to the top right of the screen and click <span class="ph uicontrol">Mark complete</span>.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-warning" id="ta_container_layout_external__note_zvj_jqb_zrb"><span class="note__title"><i class="pe-2 bi bi-exclamation-circle-fill"></i>Important:</span> To regain the ability to make adjustments, click <span class="ph uicontrol">Mark incomplete</span>. Be aware that this will reset the <a class="xref" href="ta_link_containers_to_a_testing_strategy.html">linkage</a> matrix.</div>
+</div>
+</li></ol></section>
+<section class="section postreq" id="ta_container_layout_external__postreq_hql_vrp_5qb">In the next step, you need to <a class="xref" href="co_create_a_testing_strategy.html">create a testing strategy</a>.</section>
+</div>
+</article></article><article class="topic task nested1" aria-labelledby="ariaid-title11" lang="en-US" id="ta_using_dna_plates">
+<h2 class="title" id="ariaid-title11">Using DNA plates</h2>
+<div class="body taskbody">
+<section class="section prereq" id="ta_using_dna_plates__prereq_wqf_gvt_lzb">To set up the layout of a sample container, first <a class="xref" href="ta_creating_request.html#ta_creating_request">create a request</a>.</section>
+<section class="section context">You can re-analyze any plate that has already been extracted. Notice that you cannot sample DNA limitlessly. Always contact the lab to ensure DNA availability.</section>
+<section><ol class="ol steps"><li class="li step stepexpand">
+<span class="ph cmd">To open the <span class="keyword wintitle">Requests</span> list, go to the left blue menu and click <span class="ph uicontrol">Requests</span>.</span>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Select the request you want to generate sample containers for in the <span class="ph uicontrol">Request</span> list.</span>
+<div class="itemgroup stepresult">The request appears in the left blue menu.</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">In the left blue menu, under the request, select <span class="ph uicontrol">Sample container generator</span>.</span>
+<div class="itemgroup info">
+<figure class="fig figure w-100 mw-100 p-3" id="ta_using_dna_plates__fig_c2w_pyh_5qb">
+<img class="image figure-img img-fluid border rounded fmdpi:300" id="ta_using_dna_plates__image_onq_ys3_5qb" src="../_graphics/tissue_container_generator.png">
+
+</figure>
+
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Select <span class="ph uicontrol">DNA plate</span> as <a class="xref" href="co_source_types.html">source type</a>.</span>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Select one or multiple plates from previous requests:</span>
+<ul class="ul choices" id="ta_using_dna_plates__choices_z1g_wvt_lzb">
+<li class="li choice">Click <span class="ph uicontrol">Add</span> to manually search the plates</li>
+<li class="li choice">Download, fill in and upload a csv template</li>
+</ul>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-info" id="ta_using_dna_plates__note_ynv_xvt_lzb"><span class="note__title"><i class="pe-2 bi bi-info-circle-fill"></i>Notice:</span> If you select DNA plates, they will hold their original name, layout and samples.</div>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Check the sample container layout.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-success" id="ta_using_dna_plates__note_lrv_4dv_4zb"><span class="note__title"><i class="pe-2 bi bi-lightbulb"></i>Tip:</span> See <a class="xref" href="co_manage_sample_container_layout_screens.html">container setup screens</a> to change the sample container layout.</div>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">To finalize the sample container setup, go to the upper right corner of the screen and click <span class="ph uicontrol">Mark complete</span>.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-info" id="ta_using_dna_plates__note_w51_twt_lzb"><span class="note__title"><i class="pe-2 bi bi-pencil"></i>Note:</span> Be aware that you can only select plates from submitted requests.</div>
+<div role="alert" class="note alert alert-warning" id="ta_using_dna_plates__note_zvj_jqb_zrb"><span class="note__title"><i class="pe-2 bi bi-exclamation-circle-fill"></i>Important:</span> To regain the ability to make adjustments, click <span class="ph uicontrol">Mark incomplete</span>. Be aware that this will reset the <a class="xref" href="ta_link_containers_to_a_testing_strategy.html">linkage</a> matrix.</div>
+</div>
+</li></ol></section>
+<section class="section postreq" id="ta_using_dna_plates__postreq_hql_vrp_5qb">In the next step, you need to <a class="xref" href="co_create_a_testing_strategy.html">create a testing strategy</a>.</section>
+</div>
+</article><article class="topic nested1" aria-labelledby="ariaid-title12" id="using_dna_cherry_pick_plates">
+<h2 class="title" id="ariaid-title12">Using DNA cherry pick plates</h2>
+<div class="body">
+<p class="p">When using DNA cherry pick plates, perform the following steps to setup the container and define its layout:</p>
+<ol class="ol" id="using_dna_cherry_pick_plates__ol_uxd_3d2_hsb">
+<li class="li"><a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_dna_plates_cherry">Select DNA plates.</a></li>
+<li class="li"><a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_observation_units_cherry">Select the observation units.</a></li>
+<li class="li"><a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_order_cherry">Change the observation unit order.</a></li>
+<li class="li"><a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_container_layout_cherry">Define the container layout.</a></li>
+</ol>
+</div>
+<article class="topic task nested2" aria-labelledby="ariaid-title13" lang="en-US" id="ta_dna_plates_cherry">
+<h3 class="title" id="ariaid-title13">Select DNA plates</h3>
+<div class="body taskbody">
+<section class="section prereq" id="ta_dna_plates_cherry__prereq_rw3_zwt_lzb">To set up the layout of a sample container, first <a class="xref" href="ta_creating_request.html#ta_creating_request">create a request</a>.</section>
+<section class="section context">You can re-analyze any sample from a plate that has already been extracted. Notice that you cannot sample DNA limitlessly. Always contact the lab to ensure DNA availability.</section>
+<section><ol class="ol steps"><li class="li step stepexpand">
+<span class="ph cmd">To open the <span class="keyword wintitle">Requests</span> list, go to the left blue menu and click <span class="ph uicontrol">Requests</span>.</span>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Select the request you want to generate sample containers for in the <span class="ph uicontrol">Request</span> list.</span>
+<div class="itemgroup stepresult">The request appears in the left blue menu.</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">In the left blue menu, under the request, select <span class="ph uicontrol">Sample container generator</span>.</span>
+<div class="itemgroup info">
+<figure class="fig figure w-100 mw-100 p-3" id="ta_dna_plates_cherry__fig_c2w_pyh_5qb">
+<img class="image figure-img img-fluid border rounded fmdpi:300" id="ta_dna_plates_cherry__image_onq_ys3_5qb" src="../_graphics/tissue_container_generator.png">
+
+</figure>
+
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Select <span class="ph uicontrol">DNA cherry pick</span> as a <a class="xref" href="co_source_types.html">source type</a>.</span>
+</li><li class="li step stepexpand keep-together">
+<span class="ph cmd">Select one or multiple plates from previous requests:</span>
+<ul class="ul choices" id="ta_dna_plates_cherry__choices_ys5_fxt_lzb">
+<li class="li choice">Manually search the plates</li>
+<li class="li choice">Select plates based on csv files</li>
+</ul>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-info" id="ta_dna_plates_cherry__note_lgh_kxt_lzb"><span class="note__title"><i class="pe-2 bi bi-info-circle-fill"></i>Notice:</span> If you select DNA plates, they will hold their original name, layout and samples.</div>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Select the container type, the number of fixed empties and whether or not you want to include floating empties.</span>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Click <span class="ph uicontrol">Next</span>.</span>
+</li></ol></section>
+<section class="section postreq" id="ta_dna_plates_cherry__postreq_pcf_h3v_4zb">The next step is to <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_observation_units_cherry">select the samples</a>.</section>
+</div>
+</article><article class="topic task nested2" aria-labelledby="ariaid-title14" id="ta_observation_units_cherry">
+<h3 class="title" id="ariaid-title14">Select the observation units</h3>
+<div class="body taskbody">
+<section class="section prereq" id="ta_observation_units_cherry__prereq_nwv_pbg_yrb">First <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_dna_plates_cherry">select DNA plates</a>.</section>
+<section><ol class="ol steps"><li class="li step stepexpand">
+<span class="ph cmd">Select the correct observation units in the list.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-success" id="ta_observation_units_cherry__note_v5x_fgg_yrb"><span class="note__title"><i class="pe-2 bi bi-lightbulb"></i>Tip:</span> Use the filters at the top of the list to search for specific observation units. Hold the <span class="keyword cmdname">shift</span> key to select two observation units and all observation units in between.</div>
+</div>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-success" id="ta_observation_units_cherry__note_zkg_mhc_zrb"><span class="note__title"><i class="pe-2 bi bi-lightbulb"></i>Tip:</span> If necessary, click <span class="ph uicontrol">Setup</span> in the trail navigator on top to go back. Click <span class="ph uicontrol">Clear next steps to edit setup</span> to change the templates.</div>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Click <span class="ph menucascade"><span class="ph uicontrol"><img class="image icon" id="ta_observation_units_cherry__image_wyc_2gg_yrb" src="../_graphics/kebab_menu.png"></span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Mark (#) for sampling</span></span>.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-info" id="ta_observation_units_cherry__note_c2c_xjz_ssb"><span class="note__title"><i class="pe-2 bi bi-pencil"></i>Note:</span> To correct an error, select the incorrect observation units and click <span class="ph menucascade"><span class="ph uicontrol"><img class="image icon" id="ta_observation_units_cherry__image_fg2_yjz_ssb" src="../_graphics/kebab_menu.png"></span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Unmark (#) for sampling</span></span>.</div>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Click <span class="ph uicontrol">Next</span>.</span>
+</li></ol></section>
+<section class="section postreq" id="ta_observation_units_cherry__postreq_dq3_qbg_yrb">The next step is to <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_container_layout_cherry">define the container layout</a> or optionally <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_order_cherry">change the sample order</a> first.</section>
+</div>
+</article><article class="topic task nested2" aria-labelledby="ariaid-title15" id="ta_order_cherry">
+<h3 class="title" id="ariaid-title15">Change the observation unit order</h3>
+<div class="body taskbody">
+<section class="section prereq" id="ta_order_cherry__prereq_nwv_pbg_yrb">First <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_dna_plates_cherry">select DNA plates</a> and <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_observation_units_cherry">select the observation units</a>.</section>
+<section class="section context">For large requests with many sample containers, you can sort observation units (to a degree) without having to review each well. Only observation units selected during the <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_observation_units_cherry">observation unit selection</a> are available in this list. Observation units are displayed in the default order of the book.<div role="alert" class="note alert alert-warning" id="ta_order_cherry__note_iwb_ltg_yrb"><span class="note__title"><i class="pe-2 bi bi-exclamation-circle-fill"></i>Important:</span> This feature is not created to micromanage each setup of the sample container. For highly customized cases, use the <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_container_layout_cherry">container layout screen</a>.</div></section>
+<section><ol class="ol steps"><li class="li step stepexpand">
+<span class="ph cmd">Select the observation units you want to re-order.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-success" id="ta_order_cherry__note_zkg_mhc_zrb"><span class="note__title"><i class="pe-2 bi bi-lightbulb"></i>Tip:</span> If necessary, click <span class="ph uicontrol">Setup</span> or <span class="ph uicontrol">Observation unit select</span> in the trail navigator on top to change the nursery field books or observation units.</div>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Click <img class="image icon" id="ta_order_cherry__image_g3w_byg_yrb" src="../_graphics/kebab_menu.png"> and select the way you want to re-order:</span>
+<div class="itemgroup info">
+<div class="border pt-3 ps-3 pe-3"><table class="table table-bordered" id="ta_order_cherry__table_wh5_wgr_xsb"><colgroup><col><col></colgroup><thead class="thead">
+<tr>
+<th class="entry" id="ta_order_cherry__table_wh5_wgr_xsb__entry__1">Option</th>
+<th class="entry" id="ta_order_cherry__table_wh5_wgr_xsb__entry__2">Outcome</th>
+</tr>
+</thead><tbody class="tbody">
+<tr>
+<td class="entry" headers="ta_order_cherry__table_wh5_wgr_xsb__entry__1"><span class="ph uicontrol">Order</span></td>
+<td class="entry" headers="ta_order_cherry__table_wh5_wgr_xsb__entry__2">Order the selection based on specific columns:<ol class="ol" type="a" id="ta_order_cherry__ol_ypx_zgr_xsb">
+<li class="li">Select the fields you want to use to order ascending or descending.</li>
+<li class="li">Click <span class="ph uicontrol">Order</span>.</li>
+</ol></td>
+</tr>
+<tr>
+<td class="entry" headers="ta_order_cherry__table_wh5_wgr_xsb__entry__1"><span class="ph uicontrol">Move to beginning</span></td>
+<td class="entry" headers="ta_order_cherry__table_wh5_wgr_xsb__entry__2">Move the selection to the beginning of the list.</td>
+</tr>
+<tr>
+<td class="entry" headers="ta_order_cherry__table_wh5_wgr_xsb__entry__1"><span class="ph uicontrol">Move to position</span></td>
+<td class="entry" headers="ta_order_cherry__table_wh5_wgr_xsb__entry__2">Move the selection to a specific position:<ol class="ol" type="a" id="ta_order_cherry__ol_qtg_bhr_xsb">
+<li class="li">Enter a list position number.</li>
+<li class="li">Click <span class="ph uicontrol">Move</span>.</li>
+</ol></td>
+</tr>
+<tr>
+<td class="entry" headers="ta_order_cherry__table_wh5_wgr_xsb__entry__1"><span class="ph uicontrol">Move to end</span></td>
+<td class="entry" headers="ta_order_cherry__table_wh5_wgr_xsb__entry__2">Move the selection to the end of the list.</td>
+</tr>
+<tr>
+<td class="entry" headers="ta_order_cherry__table_wh5_wgr_xsb__entry__1"><span class="ph uicontrol">Remove</span></td>
+<td class="entry" headers="ta_order_cherry__table_wh5_wgr_xsb__entry__2">Remove the selection.</td>
+</tr>
+</tbody></table></div>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">Click <span class="ph uicontrol">Next</span>.</span>
+</li></ol></section>
+<section class="section postreq" id="ta_order_cherry__postreq_gpw_n1h_yrb">The next step is to <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_container_layout_cherry">define the container layout</a>.</section>
+</div>
+</article><article class="topic task nested2" aria-labelledby="ariaid-title16" id="ta_container_layout_cherry">
+<h3 class="title" id="ariaid-title16">Define the container layout</h3>
+<div class="body taskbody">
+<section class="section prereq" id="ta_container_layout_cherry__prereq_fww_b5p_5qb">To set up the layout of a sample container, first <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_dna_plates_cherry">select DNA templates</a>, <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_observation_units_cherry">select the observation units</a> and optionally, <a class="xref" href="to_define_the_sample_container_or_seedbag_layout.html#ta_order_cherry">change the observation unit order</a>. Additionally, check the <a class="xref" href="co_criteria_for_bag_or_plate_layout.html">criteria for the container layout</a> and the <a class="xref" href="co_filling_options.html">filling options</a>.</section>
+<section><ol class="ol steps"><li class="li step stepexpand">
+<span class="ph cmd">If you want to assign all observation units to the sample container, click <span class="ph menucascade"><span class="ph uicontrol"><img class="image icon" id="ta_container_layout_cherry__image_uvl_lr3_d1c" src="../_graphics/kebab_menu.png"></span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Assign all observation units by order #</span></span>.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-info" id="ta_container_layout_cherry__note_htp_khr_xsb"><span class="note__title"><i class="pe-2 bi bi-info-circle-fill"></i>Notice:</span> All previous defined sample container layouts are cleared when selecting this option.</div>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">If you want to assign specific observation units to the sample container, select <img class="image icon" id="ta_container_layout_cherry__image_abq_csn_wqb" src="../_graphics/green_check.png"> the observation units, click <img class="image icon" id="ta_container_layout_cherry__image_qzr_pr3_d1c" src="../_graphics/kebab_menu.png"> and choose a filling option:</span>
+<div class="itemgroup info">
+<div class="border pt-3 ps-3 pe-3"><table class="table table-bordered keep-together" id="ta_container_layout_cherry__table_vp2_3hr_xsb"><colgroup><col><col></colgroup><thead class="thead">
+<tr>
+<th class="entry" id="ta_container_layout_cherry__table_vp2_3hr_xsb__entry__1">Option</th>
+<th class="entry" id="ta_container_layout_cherry__table_vp2_3hr_xsb__entry__2">Outcome</th>
+</tr>
+</thead><tbody class="tbody">
+<tr>
+<td class="entry" headers="ta_container_layout_cherry__table_vp2_3hr_xsb__entry__1"><span class="ph uicontrol">Add selected observation units (#) to selected position</span></td>
+<td class="entry" headers="ta_container_layout_cherry__table_vp2_3hr_xsb__entry__2">Add the selected observation units to the selected well.</td>
+</tr>
+<tr>
+<td class="entry" headers="ta_container_layout_cherry__table_vp2_3hr_xsb__entry__1"><span class="ph uicontrol">Assign selected observation units (#) to empty positions as from selected position</span></td>
+<td class="entry" headers="ta_container_layout_cherry__table_vp2_3hr_xsb__entry__2">Add the selected observation units to the first empty wells starting from the selected well.</td>
+</tr>
+<tr>
+<td class="entry" headers="ta_container_layout_cherry__table_vp2_3hr_xsb__entry__1"><span class="ph uicontrol">Assign selected observation units (#) after last filled position</span></td>
+<td class="entry" headers="ta_container_layout_cherry__table_vp2_3hr_xsb__entry__2">Add the selected observation units to the first empty wells after the last filled well.</td>
+</tr>
+
+</tbody></table></div>
+<div role="alert" class="note alert alert-info" id="ta_container_layout_cherry__note_fgt_js2_tsb"><span class="note__title"><i class="pe-2 bi bi-pencil"></i>Note:</span> The following tips may help you fill a sample container:<ul class="ul" id="ta_container_layout_cherry__ul_xnl_x2l_xsb">
+<li class="li">Hold the <span class="keyword cmdname">shift</span> key to select two observation units and all observation units in between.</li>
+<li class="li">For small setups, select <img class="image icon" id="ta_container_layout_cherry__image_uss_x2l_xsb" src="../_graphics/drag_and_drop.png"> next to the observation unit of your choice and drag to the correct well on the sample container.</li>
+<li class="li">If no selection is made, all observation units are implicitly selected.</li>
+<li class="li">To empty a well, go to the list view of the sample container and select <span class="ph menucascade"><span class="ph uicontrol"><img class="image icon" id="ta_container_layout_cherry__image_ky1_bfl_xsb" src="../_graphics/kebab_menu.png"></span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Clear positions</span></span>.</li>
+</ul></div>
+</div>
+</li><li class="li step stepexpand">
+<span class="ph cmd">To finalize the sample container setup, go to the top right of the screen and click <span class="ph uicontrol">Mark complete</span>.</span>
+<div class="itemgroup info">
+<div role="alert" class="note alert alert-warning" id="ta_container_layout_cherry__note_zvj_jqb_zrb"><span class="note__title"><i class="pe-2 bi bi-exclamation-circle-fill"></i>Important:</span> To regain the ability to make adjustments, click <span class="ph uicontrol">Mark incomplete</span>. Be aware that this will reset the <a class="xref" href="ta_link_containers_to_a_testing_strategy.html">linkage</a> matrix.</div>
+</div>
+</li></ol></section>
+<section class="section postreq" id="ta_container_layout_cherry__postreq_hql_vrp_5qb">In the next step, you need to <a class="xref" href="co_create_a_testing_strategy.html">create a testing strategy</a>.</section>
+</div>
+</article></article></article></article></main></div><script language="javascript" src="../js/popovers.js"></script><script language="javascript" src="../js/dark-mode-toggler.js"></script><footer role="contentinfo" class="mt-3 border-top bg-primary-subtle"><div class="container text-center">
+<p class="p-3">
+<small class="copyright">MARqeT for Vegetable seeds <br> copyright © BASF</small>
+</p>
+</div></footer></body></html>

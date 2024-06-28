@@ -10,6 +10,9 @@ module.exports = function (eleventyConfig) {
       return (data) => `${data.page.filePathStem}.${data.page.outputFileExtension}`;
     });
 
+    // Copy the `netlify.toml` file to the output
+    eleventyConfig.addPassthroughCopy("netlify.toml");
+
     // Copy the `_redirects` file to the output
     eleventyConfig.addPassthroughCopy("_redirects");
 

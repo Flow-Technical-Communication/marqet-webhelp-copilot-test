@@ -10,8 +10,11 @@ module.exports = function (eleventyConfig) {
       return (data) => `${data.page.filePathStem}.${data.page.outputFileExtension}`;
     });
 
-    // Copy the `_redirects` directory to the output
+    // Copy the `_redirects` file to the output
     eleventyConfig.addPassthroughCopy("_redirects");
+
+    // Copy the `maintenance.html` file to the output
+    eleventyConfig.addPassthroughCopy("maintenance.html");
 
     // Copy the `css` directory to the output
     eleventyConfig.addPassthroughCopy("css");
